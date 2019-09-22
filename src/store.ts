@@ -26,6 +26,9 @@ export default new Vuex.Store({
     setCategories: (state, categories: Category[]) => {
       state.categories = categories;
     },
+    setChosenCategories: (state, categories: Category[]) => {
+      state.chosenCategories = categories;
+    },
     updateChosenCategories: (state, category: Category) => {
       let newChosenCategories = null;
       if (state.chosenCategories.some(cat => cat.name === category.name)) {

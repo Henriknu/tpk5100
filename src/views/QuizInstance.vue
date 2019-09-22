@@ -8,6 +8,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { Category } from "../types/storeTypes";
 export default Vue.extend({
   data() {
     return {
@@ -19,6 +20,7 @@ export default Vue.extend({
   },
   methods: {
     back() {
+      this.$store.commit("setChosenCategories", Array<Category>());
       this.$router.go(-1);
     }
   },
