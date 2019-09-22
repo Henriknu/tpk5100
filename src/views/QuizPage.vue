@@ -1,12 +1,16 @@
 <template>
-  <div>
-    <h1>Quiz</h1>
-    <div class="p-category-div">
-      <p>Select what topics you want to focus on:</p>
-    </div>
-    <CategorySelector />
-    <div class="button-div">
-      <v-btn x-large class="quiz-start-button" @click="startQuiz">Start Quiz</v-btn>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Quiz</h1>
+        <div class="p-category-div">
+          <p>Select what topics you want to focus on:</p>
+        </div>
+        <CategorySelector />
+        <div class="button-div">
+          <v-btn x-large class="quiz-start-button" @click="startQuiz">Start Quiz</v-btn>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -51,14 +55,8 @@ p {
 
 .button-div {
   display: flex;
-  flex-direction: row;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
   justify-content: center;
-  flex-grow: 1;
-}
-
-.quiz-start-button {
-  align-self: flex-end;
-  position: absolute;
-  bottom: 15rem;
 }
 </style>
