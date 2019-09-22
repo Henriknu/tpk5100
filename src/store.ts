@@ -1,25 +1,28 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import { Question, Category } from "./types/storeTypes";
+import { State, Question, Category, Quiz } from "./types/storeTypes";
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
+export default new Vuex.Store<State>({
   state: {
     categories: Array<Category>(),
-    chosenCategories: Array<Category>()
+    chosenCategories: Array<Category>(),
+    quiz: null,
+    limit: 10
   },
   getters: {
     getQuestions: state => {
       let questions: Question[] = [];
-      console.log(questions);
       state.chosenCategories.forEach(category => {
         category.questions.forEach((question: Question) => {
           questions.push(question);
         });
       });
-      console.log(questions);
       return questions;
+    },
+    getQuizQuestions: state => {
+      return state.quiz ? state.quiz.questions : null;
     }
   },
   mutations: {
@@ -28,6 +31,9 @@ export default new Vuex.Store({
     },
     setChosenCategories: (state, categories: Category[]) => {
       state.chosenCategories = categories;
+    },
+    setQuiz: (state, quiz: Quiz) => {
+      state.quiz = quiz;
     },
     updateChosenCategories: (state, category: Category) => {
       let newChosenCategories = null;

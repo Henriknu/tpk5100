@@ -4,6 +4,7 @@
     <div class="list--div">
       <ul class="list-group">
         <a
+          role="button"
           class="list-group-item list-group-item-action"
           :class="{'list-group-item-success': chosenCategories.some(category => category.name === cat.name)}"
           v-for="cat in categories"

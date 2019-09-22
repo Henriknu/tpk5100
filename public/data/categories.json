@@ -34,9 +34,36 @@
         }
       ]
     },
-    { "name": "Project Life Cycle" },
-    { "name": "Project Initiation" },
-    { "name": "Project Success" },
+    {
+      "name": "Project Life Cycle",
+      "questions": [
+        {
+          "question": "Which of the options are not regular phases in a project?",
+          "options": ["Implementation", "Planning", "Marketing"],
+          "answerIndex": 2
+        }
+      ]
+    },
+    {
+      "name": "Project Initiation",
+      "questions": [
+        {
+          "question": "Purpose is usually defined in the initiation phase of the project.",
+          "options": ["True", "False"],
+          "answerIndex": 0
+        }
+      ]
+    },
+    {
+      "name": "Project Success",
+      "questions": [
+        {
+          "question": "Purpose is usually defined in the initiation phase of the project.",
+          "options": ["True", "False"],
+          "answerIndex": 0
+        }
+      ]
+    },
     { "name": "Success Factors" },
     { "name": "Project Organization" },
     { "name": "Project Planning" },

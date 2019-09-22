@@ -19,6 +19,7 @@
 import { mapGetters } from "vuex";
 import CategorySelector from "../components/CategorySelector.vue";
 import Vue, { VueConstructor } from "vue";
+import { Quiz, Question } from "../types/storeTypes";
 
 interface VuexBindings {
   getQuestions: Function;
@@ -32,11 +33,28 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
     ...mapGetters(["getQuestions"]),
     startQuiz() {
       let questions = this.getQuestions();
-      console.log(questions);
+      function shuffleArray(array: Question[]) {
+        for (var i = array.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+        }
+      }
+      shuffleArray(questions);
+      let end =
+        this.limit <= questions.length ? this.limit - 1 : questions.length - 1;
+      let sample = questions.slice(0, end);
+      let quiz = new Quiz(sample, this.limit);
+      this.$store.commit("setQuiz", quiz);
       this.$router.push({
-        name: "quiz instance",
-        params: { incomingQuestions: questions }
+        name: "quiz instance"
       });
+    }
+  },
+  computed: {
+    limit() {
+      return this.$store.state.limit;
     }
   }
 });
