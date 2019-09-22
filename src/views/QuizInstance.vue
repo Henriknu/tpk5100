@@ -8,7 +8,8 @@
         <a
           role="button"
           class="list-group-item list-group-item-action"
-          :class="{'list-group-item-primary': optionSelected === option}"
+          :class="[{'list-group-item-primary': optionSelected === option}, {'list-group-item-success': answered && index === activeQuestion.answerIndex},
+          {'list-group-item-danger': answered && index !== activeQuestion.answerIndex && option ===optionSelected}]"
           v-for="(option, index) in activeQuestion.options"
           :key="option"
           @click="select(option)"
@@ -44,11 +45,13 @@ export default Vue.extend({
       this.$router.go(-1);
     },
     verify() {
-      this.answered = !this.answered;
+      this.answered = true;
     },
-    nextQuestion() {},
+    nextQuestion() {
+      this.optionSelected = "";
+      this.answered = false;
+    },
     select(option: string) {
-      console.log(option);
       this.optionSelected = option;
     }
   },
