@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <div>
     <p>Number of topics selected: {{this.$store.state.chosenCategories.length}}</p>
     <v-card>
       <v-list>
@@ -12,7 +12,7 @@
         </v-list-item-group>
       </v-list>
     </v-card>
-  </v-app>
+  </div>
 </template>
 
 <script lang="ts">
@@ -29,7 +29,8 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
   name: "categories",
   data() {
     return {
-      categories: this.$store.state.categories
+      categories: this.$store.state.categories,
+      chosenCategories: this.$store.state.chosenCategories
     };
   },
   methods: {
@@ -45,5 +46,8 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
 .v-list {
   height: 20rem;
   overflow-y: auto;
+}
+.list-item {
+  color: #4caf50;
 }
 </style>

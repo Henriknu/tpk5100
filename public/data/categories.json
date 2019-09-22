@@ -24,7 +24,16 @@
         }
       ]
     },
-    { "name": "Stakeholders" },
+    {
+      "name": "Stakeholders",
+      "questions": [
+        {
+          "question": "Stakeholders should only be involved in the implementation phase.",
+          "options": ["True", "False"],
+          "answerIndex": 1
+        }
+      ]
+    },
     { "name": "Project Life Cycle" },
     { "name": "Project Initiation" },
     { "name": "Project Success" },

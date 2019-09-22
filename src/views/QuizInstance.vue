@@ -20,7 +20,7 @@ export default Vue.extend({
   },
   methods: {
     back() {
-      this.$store.commit("setChosenCategories", Array<Category>());
+      //this.$store.commit("setChosenCategories", Array<Category>());
       this.$router.go(-1);
     }
   },
