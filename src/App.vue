@@ -1,29 +1,77 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <v-app-bar v-if="!isMobile" clipped-left app>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title class="headline text-uppercase">Projectify</v-toolbar-title>
+    </v-app-bar>
+
+    <v-navigation-drawer v-if="!isMobile" v-model="drawer" temporary app>
+      <v-list>
+        <v-list-item-title class="title">Application</v-list-item-title>
+        <v-list-item
+          v-for="link in links"
+          :key="link.text"
+          router
+          :to="link.route"
+          @click="drawer = false"
+        >
+          <v-list-item-content>
+            <v-list-item-subtitle>{{link.text}}</v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-bottom-navigation v-if="isMobile" fixed>
+      <v-btn value="home" to="/">
+        <span>Home</span>
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
+      <v-btn value="quiz" to="/quiz">
+        <span>Quiz</span>
+        <v-icon>mdi-comment-question-outline</v-icon>
+      </v-btn>
+    </v-bottom-navigation>
+
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script lang="ts">
+import Vue from "vue";
+export default Vue.extend({
+  name: "App",
+  components: {},
+  data: () => ({
+    drawer: false,
+    isMobile: false,
+    links: [{ text: "Home", route: "/" }, { text: "Quiz", route: "/quiz" }]
+  }),
+  beforeDestroy() {
+    if (typeof window !== "undefined") {
+      window.removeEventListener("resize", this.onResize);
+    }
+  },
+
+  created() {
+    console.log("Initating categories");
+    this.$store.dispatch("initiateCategories");
+  },
+
+  mounted() {
+    this.onResize();
+    window.addEventListener("resize", this.onResize, { passive: true });
+  },
+
+  methods: {
+    onResize() {
+      this.isMobile = window.innerWidth < 600;
     }
   }
-}
+});
+</script>
+
+<style>
 </style>

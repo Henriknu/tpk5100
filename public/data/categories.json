@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "name": "Project Characteristics",
+      "questions": [
+        {
+          "question": "Which of the options are not a Project Characteristic?",
+          "options": [
+            "Organizational complexity",
+            "Business perspective",
+            "Validity"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "Which of the options are not a common constraint in projects?",
+          "options": ["Time", "Specifications", "Competence"],
+          "answerIndex": 2
+        },
+        {
+          "question": "Uncertainty has strong correlation to constraints. ",
+          "options": ["True", "False"],
+          "answerIndex": 1
+        }
+      ]
+    },
+    { "name": "Stakeholders" },
+    { "name": "Project Life Cycle" },
+    { "name": "Project Initiation" },
+    { "name": "Project Success" },
+    { "name": "Success Factors" },
+    { "name": "Project Organization" },
+    { "name": "Project Planning" },
+    { "name": "Project Risk Management" }
+  ]
+}
