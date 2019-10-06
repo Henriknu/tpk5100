@@ -2,7 +2,9 @@
   <v-app>
     <v-app-bar v-if="!isMobile" clipped-left app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title class="headline text-uppercase">Projectify</v-toolbar-title>
+      <v-toolbar-title class="headline text-uppercase"
+        >Projectify</v-toolbar-title
+      >
     </v-app-bar>
 
     <v-navigation-drawer v-if="!isMobile" v-model="drawer" temporary app>
@@ -16,7 +18,7 @@
           @click="drawer = false"
         >
           <v-list-item-content>
-            <v-list-item-subtitle>{{link.text}}</v-list-item-subtitle>
+            <v-list-item-subtitle>{{ link.text }}</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -47,7 +49,7 @@ export default Vue.extend({
   data: () => ({
     drawer: false,
     isMobile: false,
-    links: [{ text: "Home", route: "/" }, { text: "Quiz", route: "/quiz" }]
+    links: [{ text: "Home", route: "/" }, { text: "Quiz", route: "/quiz" }],
   }),
   beforeDestroy() {
     if (typeof window !== "undefined") {
@@ -68,10 +70,9 @@ export default Vue.extend({
   methods: {
     onResize() {
       this.isMobile = window.innerWidth < 600;
-    }
-  }
+    },
+  },
 });
 </script>
 
-<style>
-</style>
+<style></style>

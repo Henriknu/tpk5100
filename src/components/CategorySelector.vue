@@ -1,16 +1,23 @@
 <template>
   <div>
-    <p>Number of topics selected: {{this.$store.state.chosenCategories.length}}</p>
+    <p>
+      Number of topics selected: {{ this.$store.state.chosenCategories.length }}
+    </p>
     <div class="list--div">
       <ul class="list-group">
         <a
-          role="button"
-          class="list-group-item list-group-item-action"
-          :class="{'list-group-item-success': chosenCategories.some(category => category.name === cat.name)}"
           v-for="cat in categories"
           :key="cat.name"
+          role="button"
+          class="list-group-item list-group-item-action"
+          :class="{
+            'list-group-item-success': chosenCategories.some(
+              category => category.name === cat.name
+            ),
+          }"
           @click="toggle(cat)"
-        >{{cat.name}}</a>
+          >{{ cat.name }}</a
+        >
       </ul>
     </div>
   </div>
@@ -27,23 +34,23 @@ interface VuexBindings {
 }
 
 export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
-  name: "categories",
+  name: "Categories",
   data() {
     return {
-      categories: this.$store.state.categories
+      categories: this.$store.state.categories,
     };
   },
   methods: {
     ...mapMutations(["updateChosenCategories"]),
     toggle(category: Category) {
       this.updateChosenCategories(category);
-    }
+    },
   },
   computed: {
     chosenCategories() {
       return this.$store.state.chosenCategories;
-    }
-  }
+    },
+  },
 });
 </script>
 

@@ -1,10 +1,3 @@
-interface State {
-  categories: Category[];
-  chosenCategories: Category[];
-  quiz: Quiz | null;
-  limit: number;
-}
-
 interface Question {
   question: string;
   options: string[];
@@ -20,11 +13,17 @@ class Quiz {
   questions: Question[];
   points: number;
   limit: number;
+  questionCounter: number;
+  correctQuestionsCounter: number;
+  initialLength: number;
   constructor(questions: Question[], limit: number) {
     this.questions = questions;
     this.points = 0;
     this.limit = limit;
+    this.questionCounter = 1;
+    this.correctQuestionsCounter = 0;
+    this.initialLength = questions.length;
   }
 }
 
-export { State, Question, Category, Quiz };
+export { Question, Category, Quiz };
