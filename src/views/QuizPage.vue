@@ -20,10 +20,6 @@ import CategorySelector from "../components/CategorySelector.vue";
 import Vue, { VueConstructor } from "vue";
 import { Quiz, Question } from "../types/storeTypes";
 
-interface VuexBindings {
-  getQuestions: Function;
-}
-
 export default Vue.extend({
   components: {
     CategorySelector,

@@ -28,5 +28,15 @@ export default new Router({
       name: "result",
       component: () => import("./views/ResultPage.vue"),
     },
+    {
+      path: "/stats",
+      name: "stats",
+      component: () => import("./views/StatsPage.vue"),
+    },
+    {
+      path: "/settings",
+      name: "settings",
+      component: () => import("./views/SettingsPage.vue"),
+    },
   ],
 });

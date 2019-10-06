@@ -2,9 +2,7 @@
   <v-app>
     <v-app-bar v-if="!isMobile" clipped-left app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title class="headline text-uppercase"
-        >Projectify</v-toolbar-title
-      >
+      <v-toolbar-title class="headline text-uppercase">Projectify</v-toolbar-title>
     </v-app-bar>
 
     <v-navigation-drawer v-if="!isMobile" v-model="drawer" temporary app>
@@ -33,6 +31,10 @@
         <span>Quiz</span>
         <v-icon>mdi-comment-question-outline</v-icon>
       </v-btn>
+      <v-btn value="stats" to="/stats">
+        <span>Stats</span>
+        <v-icon>mdi-chart-line</v-icon>
+      </v-btn>
     </v-bottom-navigation>
 
     <v-content>
@@ -49,7 +51,11 @@ export default Vue.extend({
   data: () => ({
     drawer: false,
     isMobile: false,
-    links: [{ text: "Home", route: "/" }, { text: "Quiz", route: "/quiz" }],
+    links: [
+      { text: "Home", route: "/" },
+      { text: "Quiz", route: "/quiz" },
+      { text: "Stats", route: "/stats" },
+    ],
   }),
   beforeDestroy() {
     if (typeof window !== "undefined") {

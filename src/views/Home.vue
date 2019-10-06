@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Projectify</h1>
+    <Nav headerText="Projectify"></Nav>
     <p>This is an educational app made for the NTNU course TPK5100.</p>
     <p>
       It allows you to practice your project management knowledge, by doing
@@ -15,7 +15,13 @@
 </template>
 
 <script lang="ts">
-export default {};
+import Nav from "../components/Nav";
+import Vue from "vue";
+export default Vue.extend({
+  components: {
+    Nav,
+  },
+});
 </script>
 
 <style scoped>

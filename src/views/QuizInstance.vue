@@ -73,6 +73,13 @@ export default Vue.extend({
     nextQuestion() {
       //if no more questions, go to result page. Else, launch next question.
       if (this.$store.state.quiz!.questions.length === 1) {
+        //Update stats
+        this.$store.dispatch("updateStats", {
+          totalQuestions: this.$store.state.quiz!.initialLength,
+          totalQuestionsCorrect: this.$store.state.quiz!
+            .correctQuestionsCounter,
+        });
+        //route to result page
         this.$router.push("/result");
       } else {
         this.optionSelected = "";

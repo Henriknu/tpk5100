@@ -1,7 +1,6 @@
 import Vue from "vue";
 import Vuex, { StoreOptions } from "vuex";
 import { Question, Category, Quiz } from "../types/storeTypes";
-import { actions } from "./actions";
 
 Vue.use(Vuex);
 
@@ -10,6 +9,10 @@ export interface RootState {
   chosenCategories: Category[];
   quiz?: Quiz;
   limit: number;
+  totalQuizzesCompleted: number;
+  totalQuestionsAnswered: number;
+  totalQuestionsCorrect: number;
+  sumOfPercentage: number;
 }
 
 const store: StoreOptions<RootState> = {
@@ -17,6 +20,10 @@ const store: StoreOptions<RootState> = {
     categories: Array<Category>(),
     chosenCategories: Array<Category>(),
     limit: 10,
+    totalQuizzesCompleted: 0,
+    totalQuestionsAnswered: 0,
+    totalQuestionsCorrect: 0,
+    sumOfPercentage: 0,
   },
   getters: {
     getQuestions: (state): Question[] => {
@@ -51,7 +58,18 @@ const store: StoreOptions<RootState> = {
     incrementCorrectQuestionCounter: state => {
       state.quiz!.correctQuestionsCounter += 1;
     },
-
+    incrementTotalQuizzesCompleted: state => {
+      state.totalQuizzesCompleted += 1;
+    },
+    addToTotalQuestionsAnswered: (state, totalQuestions) => {
+      state.totalQuestionsAnswered += totalQuestions;
+    },
+    addToTotalQuestionsCorrect: (state, totalQuestionsCorrect) => {
+      state.totalQuestionsCorrect += totalQuestionsCorrect;
+    },
+    addToSumOfPercentage: (state, percentage) => {
+      state.sumOfPercentage += percentage;
+    },
     updateChosenCategories: (state, category: Category): void => {
       let newChosenCategories = null;
       if (state.chosenCategories.some(cat => cat.name === category.name)) {
@@ -72,7 +90,25 @@ const store: StoreOptions<RootState> = {
       console.log(state.quiz!.questions);
     },
   },
-  actions,
+  actions: {
+    initiateCategories: ({ state, commit }): void => {
+      fetch("data/categories.json")
+        .then(res => res.json())
+        .then(data => {
+          let categories = Object.values(data)[0];
+          commit("setCategories", categories);
+        });
+    },
+    updateStats: (
+      { commit },
+      { totalQuestions, totalQuestionsCorrect }
+    ): void => {
+      commit("incrementTotalQuizzesCompleted");
+      commit("addToTotalQuestionsAnswered", totalQuestions);
+      commit("addToTotalQuestionsCorrect", totalQuestionsCorrect);
+      commit("addToSumOfPercentage", totalQuestionsCorrect / totalQuestions);
+    },
+  },
 };
 
 export default new Vuex.Store<RootState>(store);
