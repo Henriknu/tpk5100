@@ -1,8 +1,11 @@
 <template>
   <div class="container">
     <h1>Results</h1>
-    <p>You answered {{correctQuestions}} out of {{initialLength}} questions correctly.</p>
-    <p v-if="precentage>=0.5">Great Job!</p>
+    <p>
+      You answered {{ correctQuestions }} out of {{ initialLength }} questions
+      correctly.
+    </p>
+    <p v-if="precentage >= 0.5">Great Job!</p>
     <p v-else>Better Luck next time!</p>
   </div>
 </template>

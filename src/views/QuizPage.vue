@@ -9,9 +9,10 @@
         <div>
           <CategorySelector />
         </div>
-
         <div class="button-div">
-          <v-btn x-large class="quiz-start-button" @click="startQuiz">Start Quiz</v-btn>
+          <v-btn x-large class="quiz-start-button" @click="startQuiz"
+            >Start Quiz</v-btn
+          >
         </div>
       </div>
     </div>
@@ -62,14 +63,15 @@ h1 {
   justify-content: center;
 }
 
-p {
-  margin: 1.5rem;
-}
-
 .button-div {
   display: flex;
   padding-top: 1.5rem;
   padding-bottom: 3rem;
   justify-content: center;
+}
+
+p {
+  text-align: start;
+  padding-left: 24px;
 }
 </style>

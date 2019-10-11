@@ -1,18 +1,43 @@
 <template>
   <div class="container">
-    <h1>Stats</h1>
-    <p>These are your stats:</p>
-    <p>Quizes completed: {{totalQuizes}}</p>
-    <p>Total Questions: {{totalQuestions}}</p>
-    <p>Correct Questions: {{correctQuestions}}</p>
-    <p v-if="avgPercentage">Average precentage: {{avgPercentage}} %</p>
+    <Nav header-text="Stats"></Nav>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Stat</th>
+          <th scope="col">Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Quizes completed</td>
+          <td>{{ totalQuizes }}</td>
+        </tr>
+        <tr>
+          <td>Total Questions</td>
+          <td>{{ totalQuestions }}</td>
+        </tr>
+        <tr>
+          <td>Correct Questions</td>
+          <td>{{ correctQuestions }}</td>
+        </tr>
+        <tr v-if="!isNaN(avgPercentage)">
+          <td>Average precentage</td>
+          <td>{{ avgPercentage }}</td>
+        </tr>
+      </tbody>
+    </table>
     <button>Reset stats</button>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Nav from "../components/Nav.vue";
 export default Vue.extend({
+  components: {
+    Nav,
+  },
   computed: {
     totalQuizes() {
       return this.$store.state.totalQuizzesCompleted;

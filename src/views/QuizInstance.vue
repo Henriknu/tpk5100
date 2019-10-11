@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <button type="button" class="btn btn-dark" @click="back">Go back</button>
-    <h4>Question {{questionIndex}}: {{ activeQuestion.question }}</h4>
+    <h4>Question {{ questionIndex }}: {{ activeQuestion.question }}</h4>
     <h4>Options:</h4>
     <div class="list--div">
       <ul class="list-group">
@@ -24,7 +24,8 @@
             },
           ]"
           @click="select(option)"
-        >{{ index + 1 }} : {{ option }}</a>
+          >{{ index + 1 }} : {{ option }}</a
+        >
       </ul>
     </div>
 
@@ -34,7 +35,8 @@
       class="btn btn-dark"
       :class="[{ disabled: !selected }]"
       @click="verify"
-    >Verify</a>
+      >Verify</a
+    >
     <v-btn v-show="answered" @click="nextQuestion">Next</v-btn>
   </div>
 </template>

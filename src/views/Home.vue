@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav headerText="Projectify"></Nav>
+    <Nav header-text="Projectify"></Nav>
     <p>This is an educational app made for the NTNU course TPK5100.</p>
     <p>
       It allows you to practice your project management knowledge, by doing

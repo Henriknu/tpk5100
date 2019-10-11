@@ -1,6 +1,8 @@
 <template>
-  <div class="con-div">
-    <p>Number of topics selected: {{ this.$store.state.chosenCategories.length }}</p>
+  <div class="col">
+    <p>
+      Number of topics selected: {{ this.$store.state.chosenCategories.length }}
+    </p>
     <div class="list--div">
       <ul class="list-group">
         <a
@@ -14,7 +16,8 @@
             ),
           }"
           @click="toggle(cat)"
-        >{{ cat.name }}</a>
+          >{{ cat.name }}</a
+        >
       </ul>
     </div>
   </div>
@@ -53,8 +56,30 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
 
 <style scoped>
 .list--div {
-  height: 40vh;
+  height: 35vh;
   overflow-y: auto;
+}
+
+.col {
+  margin: auto;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .list--div {
+    height: 50vh;
+    overflow-y: auto;
+  }
+  .col {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .list--div {
+    height: 50vh;
+    overflow-y: auto;
+  }
 }
 .list-group-item.active {
   background-color: #c3e6cb;

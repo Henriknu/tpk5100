@@ -2,7 +2,9 @@
   <v-app>
     <v-app-bar v-if="!isMobile" clipped-left app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title class="headline text-uppercase">Projectify</v-toolbar-title>
+      <v-toolbar-title class="headline text-uppercase"
+        >Projectify</v-toolbar-title
+      >
     </v-app-bar>
 
     <v-navigation-drawer v-if="!isMobile" v-model="drawer" temporary app>
@@ -38,7 +40,9 @@
     </v-bottom-navigation>
 
     <v-content>
-      <router-view></router-view>
+      <div class="content-div">
+        <router-view></router-view>
+      </div>
     </v-content>
   </v-app>
 </template>
@@ -85,10 +89,12 @@ export default Vue.extend({
 </script>
 
 <style>
-div div a {
-  text-decoration: none;
+.content-div {
+  margin: auto;
 }
-span.no-after:after {
-  content: none;
+@media only screen and (min-width: 960px) {
+  .content-div {
+    max-width: 800px;
+  }
 }
 </style>
