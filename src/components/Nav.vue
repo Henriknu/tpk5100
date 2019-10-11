@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
+      <span></span>
       <h1>{{headerText}}</h1>
       <v-btn router icon to="/settings">
         <v-icon>mdi-dots-vertical</v-icon>

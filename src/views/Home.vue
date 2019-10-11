@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts">
-import Nav from "../components/Nav";
+import Nav from "../components/Nav.vue";
 import Vue from "vue";
 export default Vue.extend({
   components: {

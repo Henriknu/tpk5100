@@ -6,7 +6,10 @@
         <div class="p-category-div">
           <p>Select what topics you want to focus on:</p>
         </div>
-        <CategorySelector />
+        <div>
+          <CategorySelector />
+        </div>
+
         <div class="button-div">
           <v-btn x-large class="quiz-start-button" @click="startQuiz">Start Quiz</v-btn>
         </div>

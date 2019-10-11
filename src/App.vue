@@ -23,16 +23,16 @@
     </v-navigation-drawer>
 
     <v-bottom-navigation v-if="isMobile" fixed>
-      <v-btn value="home" to="/">
+      <v-btn value="home" @click="goToPage('/')">
         <span>Home</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
-      <v-btn value="quiz" to="/quiz">
+      <v-btn value="quiz" @click="goToPage('/quiz')">
         <span>Quiz</span>
         <v-icon>mdi-comment-question-outline</v-icon>
       </v-btn>
-      <v-btn value="stats" to="/stats">
-        <span>Stats</span>
+      <v-btn value="stats" @click="goToPage('/stats')">
+        <span class="no-after">Stats</span>
         <v-icon>mdi-chart-line</v-icon>
       </v-btn>
     </v-bottom-navigation>
@@ -77,8 +77,18 @@ export default Vue.extend({
     onResize() {
       this.isMobile = window.innerWidth < 600;
     },
+    goToPage(path: string) {
+      if (this.$router.currentRoute.path !== path) this.$router.push(path);
+    },
   },
 });
 </script>
 
-<style></style>
+<style>
+div div a {
+  text-decoration: none;
+}
+span.no-after:after {
+  content: none;
+}
+</style>
