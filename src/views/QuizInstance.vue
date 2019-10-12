@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <button type="button" class="btn btn-dark" @click="back">Go back</button>
+    <a @click="back">
+      <img src="../../public/img/icons8-go-back-96.png" alt="Go back" />
+    </a>
     <h4>Question {{ questionIndex }}: {{ activeQuestion.question }}</h4>
     <h4>Options:</h4>
     <div class="list--div">
@@ -24,20 +26,25 @@
             },
           ]"
           @click="select(option)"
-          >{{ index + 1 }} : {{ option }}</a
-        >
+        >{{ index + 1 }} : {{ option }}</a>
       </ul>
     </div>
+    <div class="button-div justify-space-between">
+      <button
+        id="verify-button"
+        type="button"
+        class="btn btn-dark btn-lg"
+        :class="[{ disabled: !selected || answered }]"
+        @click="verify"
+      >Verify</button>
 
-    <a
-      v-show="!answered"
-      type="button"
-      class="btn btn-dark"
-      :class="[{ disabled: !selected }]"
-      @click="verify"
-      >Verify</a
-    >
-    <v-btn v-show="answered" @click="nextQuestion">Next</v-btn>
+      <button
+        :class="[{ disabled: !answered }]"
+        type="button"
+        class="btn btn-dark btn-lg"
+        @click="nextQuestion"
+      >Next</button>
+    </div>
   </div>
 </template>
 
@@ -63,40 +70,63 @@ export default Vue.extend({
       this.$router.go(-1);
     },
     verify() {
-      this.answered = true;
-      //Give points / increment correct counter
-      if (
-        this.optionSelected ===
-        this.activeQuestion.options[this.activeQuestion.answerIndex]
-      ) {
-        this.$store.commit("incrementCorrectQuestionCounter");
+      if (this.selected && !this.answered) {
+        this.answered = true;
+        //Give points / increment correct counter
+        if (
+          this.optionSelected ===
+          this.activeQuestion.options[this.activeQuestion.answerIndex]
+        ) {
+          this.$store.commit("incrementCorrectQuestionCounter");
+        }
       }
     },
     nextQuestion() {
-      //if no more questions, go to result page. Else, launch next question.
-      if (this.$store.state.quiz!.questions.length === 1) {
-        //Update stats
-        this.$store.dispatch("updateStats", {
-          totalQuestions: this.$store.state.quiz!.initialLength,
-          totalQuestionsCorrect: this.$store.state.quiz!
-            .correctQuestionsCounter,
-        });
-        //route to result page
-        this.$router.push("/result");
-      } else {
-        this.optionSelected = "";
-        this.answered = false;
-        this.$store.commit("removeQuestion", this.activeQuestion);
-        this.$store.commit("incrementQuestionCounter");
-        this.activeQuestion = this.$store.getters.getQuestion(0);
-        this.questionIndex = this.$store.state.quiz!.questionCounter;
+      if (this.answered) {
+        //if no more questions, go to result page. Else, launch next question.
+        if (this.$store.state.quiz!.questions.length === 1) {
+          //Update stats
+          this.$store.dispatch("updateStats", {
+            totalQuestions: this.$store.state.quiz!.initialLength,
+            totalQuestionsCorrect: this.$store.state.quiz!
+              .correctQuestionsCounter,
+          });
+          //route to result page
+          this.$router.push("/result");
+        } else {
+          this.optionSelected = "";
+          this.answered = false;
+          this.$store.commit("removeQuestion", this.activeQuestion);
+          this.$store.commit("incrementQuestionCounter");
+          this.activeQuestion = this.$store.getters.getQuestion(0);
+          this.questionIndex = this.$store.state.quiz!.questionCounter;
+        }
       }
     },
     select(option: string) {
-      this.optionSelected = option;
+      if (!this.answered) this.optionSelected = option;
     },
   },
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+img {
+  width: 35px;
+  padding-bottom: 20px;
+}
+h4 {
+  padding-bottom: 20px;
+}
+button {
+  margin-top: 20px;
+  margin: 24px;
+}
+.disabled {
+  cursor: default;
+}
+.button-div {
+  display: flex;
+  justify-content: space-between;
+}
+</style>

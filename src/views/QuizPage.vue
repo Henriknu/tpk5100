@@ -1,20 +1,14 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1>Quiz</h1>
-        <div class="p-category-div">
-          <p>Select what topics you want to focus on:</p>
-        </div>
-        <div>
-          <CategorySelector />
-        </div>
-        <div class="button-div">
-          <v-btn x-large class="quiz-start-button" @click="startQuiz"
-            >Start Quiz</v-btn
-          >
-        </div>
-      </div>
+    <Nav header-text="Quiz"></Nav>
+    <div class="p-category-div">
+      <p>Select what topics you want to focus on.</p>
+    </div>
+    <div>
+      <CategorySelector />
+    </div>
+    <div class="button-div">
+      <v-btn x-large class="quiz-start-button" @click="startQuiz">Start Quiz</v-btn>
     </div>
   </div>
 </template>
@@ -23,10 +17,12 @@
 import CategorySelector from "../components/CategorySelector.vue";
 import Vue, { VueConstructor } from "vue";
 import { Quiz, Question } from "../types/storeTypes";
+import Nav from "../components/Nav.vue";
 
 export default Vue.extend({
   components: {
     CategorySelector,
+    Nav,
   },
   computed: {
     limit() {
@@ -57,10 +53,9 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-h1 {
-  display: flex;
-  align-self: center;
-  justify-content: center;
+p {
+  padding-top: 20px;
+  padding-left: 35px;
 }
 
 .button-div {

@@ -1,10 +1,8 @@
 <template>
   <div class="col">
-    <p>
-      Number of topics selected: {{ this.$store.state.chosenCategories.length }}
-    </p>
+    <p>Number of topics selected: {{ this.$store.state.chosenCategories.length }}</p>
     <div class="list--div">
-      <ul class="list-group">
+      <ul class="custom--ul list-group">
         <a
           v-for="cat in categories"
           :key="cat.name"
@@ -16,8 +14,7 @@
             ),
           }"
           @click="toggle(cat)"
-          >{{ cat.name }}</a
-        >
+        >{{ cat.name }}</a>
       </ul>
     </div>
   </div>
@@ -74,6 +71,7 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
     overflow-y: auto;
   }
 }
+
 .list-group-item.active {
   background-color: #c3e6cb;
 }

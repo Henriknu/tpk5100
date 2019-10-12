@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <a @click="goToQuiz">
+      <img src="../../public/img/icons8-go-back-96.png" alt="Go back" />
+    </a>
     <h1>Results</h1>
     <p>
       You answered {{ correctQuestions }} out of {{ initialLength }} questions
@@ -24,7 +27,17 @@ export default Vue.extend({
       return this.$data.correctQuestions / this.$data.initialLength;
     },
   },
+  methods: {
+    goToQuiz() {
+      this.$router.push("/quiz");
+    },
+  },
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+img {
+  width: 35px;
+  padding-bottom: 20px;
+}
+</style>

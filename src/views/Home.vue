@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <Nav header-text="Projectify"></Nav>
     <p>This is an educational app made for the NTNU course TPK5100.</p>
     <p>
@@ -25,13 +25,8 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-h1 {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-}
-
 p {
-  margin: 1.5rem;
+  padding-top: 20px;
+  padding-left: 35px;
 }
 </style>

@@ -1,32 +1,35 @@
 <template>
   <div class="container">
     <Nav header-text="Stats"></Nav>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th scope="col">Stat</th>
-          <th scope="col">Value</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Quizes completed</td>
-          <td>{{ totalQuizes }}</td>
-        </tr>
-        <tr>
-          <td>Total questions answered</td>
-          <td>{{ totalQuestions }}</td>
-        </tr>
-        <tr>
-          <td>Total correct answers</td>
-          <td>{{ correctQuestions }}</td>
-        </tr>
-        <tr v-if="!isNaN(avgPercentage)">
-          <td>Average precentage</td>
-          <td>{{ avgPercentage }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table--div">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Stat</th>
+            <th scope="col">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Quizes completed</td>
+            <td>{{ totalQuizes }}</td>
+          </tr>
+          <tr>
+            <td>Total questions answered</td>
+            <td>{{ totalQuestions }}</td>
+          </tr>
+          <tr>
+            <td>Total correct answers</td>
+            <td>{{ correctQuestions }}</td>
+          </tr>
+          <tr v-if="!isNaN(avgPercentage)">
+            <td>Average precentage</td>
+            <td>{{ avgPercentage }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <button>Reset stats</button>
   </div>
 </template>
@@ -59,4 +62,8 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.table--div {
+  padding: 35px;
+}
+</style>

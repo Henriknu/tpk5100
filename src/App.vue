@@ -8,21 +8,21 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            :class="{active: this.$router.currentRoute.name === 'home'}"
+            :class="{ active: this.$router.currentRoute.name === 'home' }"
             @click="goToPage('/')"
           >Home</a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link"
-            :class="{active: this.$router.currentRoute.name === 'quiz'}"
+            :class="{ active: this.$router.currentRoute.name === 'quiz' }"
             @click="goToPage('/quiz')"
           >Quiz</a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link"
-            :class="{active: this.$router.currentRoute.name === 'stats'}"
+            :class="{ active: this.$router.currentRoute.name === 'stats' }"
             @click="goToPage('/stats')"
           >Stats</a>
         </li>
@@ -31,7 +31,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            :class="{active: this.$router.currentRoute.name === 'settings'}"
+            :class="{ active: this.$router.currentRoute.name === 'settings' }"
             @click="goToPage('/settings')"
           >Settings</a>
         </li>
@@ -108,19 +108,22 @@ export default Vue.extend({
 }
 .custom-container {
   margin: auto;
-  width: 600px;
+  width: 480px;
+}
+ul {
+  padding-right: 24px;
 }
 
 /*Ipad */
 
 @media only screen and (min-width: 768px) {
   .custom-container {
-    width: 768px;
+    width: 650px;
   }
 }
 @media only screen and (min-width: 860px) {
   .custom-container {
-    width: 700px;
+    width: 650px;
   }
 }
 
@@ -129,7 +132,7 @@ export default Vue.extend({
     max-width: 800px;
   }
   .custom-container {
-    width: 800px;
+    width: 750px;
   }
 }
 </style>
