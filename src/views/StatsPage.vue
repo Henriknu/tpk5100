@@ -14,11 +14,11 @@
           <td>{{ totalQuizes }}</td>
         </tr>
         <tr>
-          <td>Total Questions</td>
+          <td>Total questions answered</td>
           <td>{{ totalQuestions }}</td>
         </tr>
         <tr>
-          <td>Correct Questions</td>
+          <td>Total correct answers</td>
           <td>{{ correctQuestions }}</td>
         </tr>
         <tr v-if="!isNaN(avgPercentage)">

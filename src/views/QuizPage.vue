@@ -69,9 +69,4 @@ h1 {
   padding-bottom: 3rem;
   justify-content: center;
 }
-
-p {
-  text-align: start;
-  padding-left: 24px;
-}
 </style>

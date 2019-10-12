@@ -1,10 +1,13 @@
 <template>
   <v-app>
     <v-app-bar v-if="!isMobile" clipped-left app>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title class="headline text-uppercase"
-        >Projectify</v-toolbar-title
-      >
+      <v-toolbar-items>
+        <v-btn class="headline text-uppercase" text @click="goToPage('/')">Projectify</v-btn>
+        <v-btn text @click="goToPage('/quiz')">Quiz</v-btn>
+        <v-btn text @click="goToPage('/stats')">Stats</v-btn>
+        <v-spacer></v-spacer>
+        <v-btn text @click="goToPage('/settings')" class="settings">Settings</v-btn>
+      </v-toolbar-items>
     </v-app-bar>
 
     <v-navigation-drawer v-if="!isMobile" v-model="drawer" temporary app>
@@ -89,6 +92,9 @@ export default Vue.extend({
 </script>
 
 <style>
+.settings {
+  margin-left: auto;
+}
 .content-div {
   margin: auto;
 }

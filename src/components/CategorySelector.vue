@@ -40,15 +40,15 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
       categories: this.$store.state.categories,
     };
   },
+  computed: {
+    chosenCategories() {
+      return this.$store.state.chosenCategories;
+    },
+  },
   methods: {
     ...mapMutations(["updateChosenCategories"]),
     toggle(category: Category) {
       this.updateChosenCategories(category);
-    },
-  },
-  computed: {
-    chosenCategories() {
-      return this.$store.state.chosenCategories;
     },
   },
 });
@@ -60,18 +60,11 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
   overflow-y: auto;
 }
 
-.col {
-  margin: auto;
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .list--div {
     height: 50vh;
     overflow-y: auto;
-  }
-  .col {
-    max-width: 500px;
   }
 }
 
