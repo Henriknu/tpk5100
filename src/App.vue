@@ -2,19 +2,38 @@
   <v-app>
     <v-app-bar v-if="false"></v-app-bar>
 
-    <nav v-if="!isMobile" class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav v-if="!isMobile" class="navbar custom-container navbar-expand-sm navbar-light bg-light">
       <a class="navbar-brand mb-0 h1" @click="goToPage('/')">Projectify</a>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" @click="goToPage('/quiz')">Quiz</a>
+          <a
+            class="nav-link"
+            :class="{active: this.$router.currentRoute.name === 'home'}"
+            @click="goToPage('/')"
+          >Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" @click="goToPage('/stats')">Stats</a>
+          <a
+            class="nav-link"
+            :class="{active: this.$router.currentRoute.name === 'quiz'}"
+            @click="goToPage('/quiz')"
+          >Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            :class="{active: this.$router.currentRoute.name === 'stats'}"
+            @click="goToPage('/stats')"
+          >Stats</a>
         </li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" @click="goToPage('/settings')">Settings</a>
+          <a
+            class="nav-link"
+            :class="{active: this.$router.currentRoute.name === 'settings'}"
+            @click="goToPage('/settings')"
+          >Settings</a>
         </li>
       </ul>
     </nav>
@@ -84,15 +103,33 @@ export default Vue.extend({
 </script>
 
 <style>
-.settings {
-  margin-left: auto;
-}
 .content-div {
   margin: auto;
 }
+.custom-container {
+  margin: auto;
+  width: 600px;
+}
+
+/*Ipad */
+
+@media only screen and (min-width: 768px) {
+  .custom-container {
+    width: 768px;
+  }
+}
+@media only screen and (min-width: 860px) {
+  .custom-container {
+    width: 700px;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .content-div {
     max-width: 800px;
+  }
+  .custom-container {
+    width: 800px;
   }
 }
 </style>
