@@ -1,31 +1,23 @@
 <template>
   <v-app>
-    <v-app-bar v-if="!isMobile" clipped-left app>
-      <v-toolbar-items>
-        <v-btn class="headline text-uppercase" text @click="goToPage('/')">Projectify</v-btn>
-        <v-btn text @click="goToPage('/quiz')">Quiz</v-btn>
-        <v-btn text @click="goToPage('/stats')">Stats</v-btn>
-        <v-spacer></v-spacer>
-        <v-btn text @click="goToPage('/settings')" class="settings">Settings</v-btn>
-      </v-toolbar-items>
-    </v-app-bar>
+    <v-app-bar v-if="false"></v-app-bar>
 
-    <v-navigation-drawer v-if="!isMobile" v-model="drawer" temporary app>
-      <v-list>
-        <v-list-item-title class="title">Application</v-list-item-title>
-        <v-list-item
-          v-for="link in links"
-          :key="link.text"
-          router
-          :to="link.route"
-          @click="drawer = false"
-        >
-          <v-list-item-content>
-            <v-list-item-subtitle>{{ link.text }}</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+    <nav v-if="!isMobile" class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand mb-0 h1" @click="goToPage('/')">Projectify</a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" @click="goToPage('/quiz')">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" @click="goToPage('/stats')">Stats</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" @click="goToPage('/settings')">Settings</a>
+        </li>
+      </ul>
+    </nav>
 
     <v-bottom-navigation v-if="isMobile" fixed>
       <v-btn value="home" @click="goToPage('/')">
