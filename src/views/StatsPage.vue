@@ -51,7 +51,7 @@ export default Vue.extend({
     correctQuestions(): number {
       return this.$store.state.totalQuestionsCorrect;
     },
-    avgPercentage(): double {
+    avgPercentage(): string {
       return (
         (this.$store.state.sumOfPercentage /
           this.$store.state.totalQuizzesCompleted) *

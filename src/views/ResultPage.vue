@@ -23,7 +23,7 @@ export default Vue.extend({
     };
   },
   computed: {
-    precentage(): double {
+    precentage(): number {
       return this.$data.correctQuestions / this.$data.initialLength;
     },
   },
