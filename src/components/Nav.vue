@@ -3,9 +3,10 @@
     <div class="row">
       <span></span>
       <h1>{{ headerText }}</h1>
-      <v-btn router icon to="/settings">
+      <v-btn v-if="isMobile" router icon to="/settings">
         <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
+      <span v-else></span>
     </div>
   </div>
 </template>
@@ -17,6 +18,11 @@ export default Vue.extend({
     headerText: {
       type: String,
       required: true,
+    },
+  },
+  computed: {
+    isMobile(): boolean {
+      return this.$store.state.isMobile;
     },
   },
 });
