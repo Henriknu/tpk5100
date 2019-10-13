@@ -24,7 +24,7 @@
           </tr>
           <tr v-if="!isNaN(avgPercentage)">
             <td>Average precentage</td>
-            <td>{{ avgPercentage }}</td>
+            <td>{{ avgPercentage }}%</td>
           </tr>
         </tbody>
       </table>

@@ -1,9 +1,12 @@
 <template>
   <div class="container">
-    <a @click="goToQuiz">
-      <img src="../../public/img/icons8-go-back-96.png" alt="Go back" />
-    </a>
-    <h1>Results</h1>
+    <div class="header--div">
+      <a v-if="isMobile" @click="goToQuiz">
+        <img src="../../public/img/icons8-go-back-96.png" alt="Go back" />
+      </a>
+      <h1>Results</h1>
+      <span></span>
+    </div>
     <p>
       You answered {{ correctQuestions }} out of {{ initialLength }} questions
       correctly.
@@ -26,6 +29,9 @@ export default Vue.extend({
     precentage(): number {
       return this.$data.correctQuestions / this.$data.initialLength;
     },
+    isMobile(): boolean {
+      return this.$store.state.isMobile;
+    },
   },
   methods: {
     goToQuiz(): void {
@@ -39,5 +45,14 @@ export default Vue.extend({
 img {
   width: 35px;
   padding-bottom: 20px;
+}
+.header--div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+h1 {
+  padding-right: 35px;
 }
 </style>

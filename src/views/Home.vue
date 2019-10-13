@@ -28,5 +28,6 @@ export default Vue.extend({
 p {
   padding-top: 20px;
   padding-left: 35px;
+  padding-right: 35px;
 }
 </style>
