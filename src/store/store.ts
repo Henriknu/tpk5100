@@ -131,6 +131,10 @@ const store: StoreOptions<RootState> = {
       commit("resetTotalQuestionsCorrect");
       commit("resetSumOfPercentage");
     },
+    onQuizCompleted: ({ commit }): void => {
+      commit("setChosenCategories", []);
+      commit("setQuiz", null);
+    },
   },
 };
 

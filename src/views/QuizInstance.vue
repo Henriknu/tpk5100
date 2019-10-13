@@ -91,6 +91,7 @@ export default Vue.extend({
             totalQuestionsCorrect: this.$store.state.quiz!
               .correctQuestionsCounter,
           });
+          this.$store.dispatch("onQuizCompleted");
           //route to result page
           this.$router.push("/result");
         } else {
