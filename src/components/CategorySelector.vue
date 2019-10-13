@@ -1,20 +1,23 @@
 <template>
   <div class="col">
-    <p>Number of topics selected: {{ this.$store.state.chosenCategories.length }}</p>
+    <p>
+      Number of topics selected: {{ this.$store.state.chosenCategories.length }}
+    </p>
     <div class="list--div">
       <ul class="custom--ul list-group">
         <a
           v-for="cat in categories"
           :key="cat.name"
-          role="button"
-          class="list-group-item list-group-item-action"
           :class="{
             'list-group-item-success': chosenCategories.some(
               category => category.name === cat.name
             ),
           }"
           @click="toggle(cat)"
-        >{{ cat.name }}</a>
+          role="button"
+          class="list-group-item list-group-item-action"
+          >{{ cat.name }}</a
+        >
       </ul>
     </div>
   </div>

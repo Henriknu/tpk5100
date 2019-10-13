@@ -8,14 +8,14 @@
       <CategorySelector />
     </div>
     <div class="button-div">
-      <v-btn x-large class="quiz-start-button" @click="startQuiz">Start Quiz</v-btn>
+      <v-btn @click="startQuiz" x-large class="quiz-start-button">Start Quiz</v-btn>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import CategorySelector from "../components/CategorySelector.vue";
-import Vue, { VueConstructor } from "vue";
+import Vue from "vue";
 import { Quiz, Question } from "../types/storeTypes";
 import Nav from "../components/Nav.vue";
 
@@ -25,26 +25,26 @@ export default Vue.extend({
     Nav,
   },
   computed: {
-    limit() {
+    limit(): number {
       return this.$store.state.limit;
     },
   },
   methods: {
-    startQuiz() {
-      let questions = this.$store.getters.getQuestions;
-      function shuffleArray(array: Question[]) {
-        for (var i = array.length - 1; i > 0; i--) {
-          var j = Math.floor(Math.random() * (i + 1));
-          var temp = array[i];
+    startQuiz(): void {
+      const questions = this.$store.getters.getQuestions;
+      function shuffleArray(array: Question[]): void {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          const temp = array[i];
           array[i] = array[j];
           array[j] = temp;
         }
       }
       shuffleArray(questions);
-      let end =
+      const end =
         this.limit <= questions.length ? this.limit - 1 : questions.length - 1;
-      let sample = questions.slice(0, end);
-      let quiz = new Quiz(sample, this.limit);
+      const sample = questions.slice(0, end);
+      const quiz = new Quiz(sample, this.limit);
       this.$store.commit("setQuiz", quiz);
       this.$router.push("/quizInstance");
     },

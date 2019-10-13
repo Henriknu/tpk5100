@@ -1,7 +1,7 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
-import { Question } from "./types/storeTypes";
 
 Vue.use(Router);
 

@@ -21,7 +21,7 @@ export default Vue.extend({
   },
 
   computed: {
-    limit() {
+    limit(): number {
       return this.$store.state.limit;
     },
   },

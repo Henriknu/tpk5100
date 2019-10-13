@@ -42,16 +42,16 @@ export default Vue.extend({
     Nav,
   },
   computed: {
-    totalQuizes() {
+    totalQuizes(): number {
       return this.$store.state.totalQuizzesCompleted;
     },
-    totalQuestions() {
+    totalQuestions(): number {
       return this.$store.state.totalQuestionsAnswered;
     },
-    correctQuestions() {
+    correctQuestions(): number {
       return this.$store.state.totalQuestionsCorrect;
     },
-    avgPercentage() {
+    avgPercentage(): double {
       return (
         (this.$store.state.sumOfPercentage /
           this.$store.state.totalQuizzesCompleted) *

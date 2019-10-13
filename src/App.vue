@@ -2,52 +2,59 @@
   <v-app>
     <v-app-bar v-if="false"></v-app-bar>
 
-    <nav v-if="!isMobile" class="navbar custom-container navbar-expand-sm navbar-light bg-light">
-      <a class="navbar-brand mb-0 h1" @click="goToPage('/')">Projectify</a>
+    <nav
+      v-if="!isMobile"
+      class="navbar custom-container navbar-expand-sm navbar-light bg-light"
+    >
+      <a @click="goToPage('/')" class="navbar-brand mb-0 h1">Projectify</a>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a
-            class="nav-link"
             :class="{ active: this.$router.currentRoute.name === 'home' }"
             @click="goToPage('/')"
-          >Home</a>
+            class="nav-link"
+            >Home</a
+          >
         </li>
         <li class="nav-item">
           <a
-            class="nav-link"
             :class="{ active: this.$router.currentRoute.name === 'quiz' }"
             @click="goToPage('/quiz')"
-          >Quiz</a>
+            class="nav-link"
+            >Quiz</a
+          >
         </li>
         <li class="nav-item">
           <a
-            class="nav-link"
             :class="{ active: this.$router.currentRoute.name === 'stats' }"
             @click="goToPage('/stats')"
-          >Stats</a>
+            class="nav-link"
+            >Stats</a
+          >
         </li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
           <a
-            class="nav-link"
             :class="{ active: this.$router.currentRoute.name === 'settings' }"
             @click="goToPage('/settings')"
-          >Settings</a>
+            class="nav-link"
+            >Settings</a
+          >
         </li>
       </ul>
     </nav>
 
     <v-bottom-navigation v-if="isMobile" fixed>
-      <v-btn value="home" @click="goToPage('/')">
+      <v-btn @click="goToPage('/')" value="home">
         <span>Home</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
-      <v-btn value="quiz" @click="goToPage('/quiz')">
+      <v-btn @click="goToPage('/quiz')" value="quiz">
         <span>Quiz</span>
         <v-icon>mdi-comment-question-outline</v-icon>
       </v-btn>
-      <v-btn value="stats" @click="goToPage('/stats')">
+      <v-btn @click="goToPage('/stats')" value="stats">
         <span class="no-after">Stats</span>
         <v-icon>mdi-chart-line</v-icon>
       </v-btn>
@@ -75,6 +82,12 @@ export default Vue.extend({
     ],
   }),
 
+  computed: {
+    isMobile() {
+      return this.$store.state.isMobile;
+    },
+  },
+
   created() {
     console.log("Initating categories");
     this.$store.dispatch("initiateCategories");
@@ -83,12 +96,6 @@ export default Vue.extend({
   mounted() {
     this.onResize();
     window.addEventListener("resize", this.onResize, { passive: true });
-  },
-
-  computed: {
-    isMobile() {
-      return this.$store.state.isMobile;
-    },
   },
   beforeDestroy() {
     if (typeof window !== "undefined") {

@@ -29,7 +29,7 @@ const store: StoreOptions<RootState> = {
   },
   getters: {
     getQuestions: (state): Question[] => {
-      let questions: Question[] = [];
+      const questions: Question[] = [];
       state.chosenCategories.forEach(category => {
         category.questions.forEach((question: Question) => {
           questions.push(question);
@@ -51,25 +51,25 @@ const store: StoreOptions<RootState> = {
     setChosenCategories: (state, categories: Category[]): void => {
       state.chosenCategories = categories;
     },
-    setQuiz: (state, quiz: Quiz) => {
+    setQuiz: (state, quiz: Quiz): void => {
       state.quiz = quiz;
     },
-    incrementQuestionCounter: state => {
+    incrementQuestionCounter: (state): void => {
       state.quiz!.questionCounter += 1;
     },
-    incrementCorrectQuestionCounter: state => {
+    incrementCorrectQuestionCounter: (state): void => {
       state.quiz!.correctQuestionsCounter += 1;
     },
-    incrementTotalQuizzesCompleted: state => {
+    incrementTotalQuizzesCompleted: (state): void => {
       state.totalQuizzesCompleted += 1;
     },
-    addToTotalQuestionsAnswered: (state, totalQuestions) => {
+    addToTotalQuestionsAnswered: (state, totalQuestions): void => {
       state.totalQuestionsAnswered += totalQuestions;
     },
-    addToTotalQuestionsCorrect: (state, totalQuestionsCorrect) => {
+    addToTotalQuestionsCorrect: (state, totalQuestionsCorrect): void => {
       state.totalQuestionsCorrect += totalQuestionsCorrect;
     },
-    addToSumOfPercentage: (state, percentage) => {
+    addToSumOfPercentage: (state, percentage): void => {
       state.sumOfPercentage += percentage;
     },
     updateChosenCategories: (state, category: Category): void => {
@@ -96,11 +96,11 @@ const store: StoreOptions<RootState> = {
     },
   },
   actions: {
-    initiateCategories: ({ state, commit }): void => {
+    initiateCategories: ({ commit }): void => {
       fetch("data/categories.json")
         .then(res => res.json())
         .then(data => {
-          let categories = Object.values(data)[0];
+          const categories = Object.values(data)[0];
           commit("setCategories", categories);
         });
     },

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";

@@ -23,12 +23,12 @@ export default Vue.extend({
     };
   },
   computed: {
-    precentage() {
+    precentage(): double {
       return this.$data.correctQuestions / this.$data.initialLength;
     },
   },
   methods: {
-    goToQuiz() {
+    goToQuiz(): void {
       this.$router.push("/quiz");
     },
   },

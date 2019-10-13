@@ -10,8 +10,6 @@
         <a
           v-for="(option, index) in activeQuestion.options"
           :key="option"
-          role="button"
-          class="list-group-item list-group-item-action"
           :class="[
             { 'list-group-item-primary': optionSelected === option },
             {
@@ -26,31 +24,38 @@
             },
           ]"
           @click="select(option)"
-        >{{ index + 1 }} : {{ option }}</a>
+          role="button"
+          class="list-group-item list-group-item-action"
+          >{{ index + 1 }} : {{ option }}</a
+        >
       </ul>
     </div>
     <div class="button-div justify-space-between">
       <button
         id="verify-button"
-        type="button"
-        class="btn btn-dark btn-lg"
         :class="[{ disabled: !selected || answered }]"
         @click="verify"
-      >Verify</button>
+        type="button"
+        class="btn btn-dark btn-lg"
+      >
+        Verify
+      </button>
 
       <button
         :class="[{ disabled: !answered }]"
+        @click="nextQuestion"
         type="button"
         class="btn btn-dark btn-lg"
-        @click="nextQuestion"
-      >Next</button>
+      >
+        Next
+      </button>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import { Category, Question } from "../types/storeTypes";
+import { Question } from "../types/storeTypes";
 export default Vue.extend({
   data() {
     return {
@@ -61,15 +66,15 @@ export default Vue.extend({
     };
   },
   computed: {
-    selected() {
+    selected(): boolean {
       return this.$data.optionSelected.length > 1;
     },
   },
   methods: {
-    back() {
+    back(): void {
       this.$router.go(-1);
     },
-    verify() {
+    verify(): void {
       if (this.selected && !this.answered) {
         this.answered = true;
         //Give points / increment correct counter
@@ -81,7 +86,7 @@ export default Vue.extend({
         }
       }
     },
-    nextQuestion() {
+    nextQuestion(): void {
       if (this.answered) {
         //if no more questions, go to result page. Else, launch next question.
         if (this.$store.state.quiz!.questions.length === 1) {
@@ -103,7 +108,7 @@ export default Vue.extend({
         }
       }
     },
-    select(option: string) {
+    select(option: string): void {
       if (!this.answered) this.optionSelected = option;
     },
   },
