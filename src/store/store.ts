@@ -63,14 +63,26 @@ const store: StoreOptions<RootState> = {
     incrementTotalQuizzesCompleted: (state): void => {
       state.totalQuizzesCompleted += 1;
     },
+    resetTotalQuizzesCompleted: (state): void => {
+      state.totalQuizzesCompleted = 0;
+    },
     addToTotalQuestionsAnswered: (state, totalQuestions): void => {
       state.totalQuestionsAnswered += totalQuestions;
+    },
+    resetTotalQuestionsAnswered: (state): void => {
+      state.totalQuestionsAnswered = 0;
     },
     addToTotalQuestionsCorrect: (state, totalQuestionsCorrect): void => {
       state.totalQuestionsCorrect += totalQuestionsCorrect;
     },
+    resetTotalQuestionsCorrect: (state): void => {
+      state.totalQuestionsCorrect = 0;
+    },
     addToSumOfPercentage: (state, percentage): void => {
       state.sumOfPercentage += percentage;
+    },
+    resetSumOfPercentage: (state): void => {
+      state.sumOfPercentage = 0;
     },
     updateChosenCategories: (state, category: Category): void => {
       let newChosenCategories = null;
@@ -112,6 +124,12 @@ const store: StoreOptions<RootState> = {
       commit("addToTotalQuestionsAnswered", totalQuestions);
       commit("addToTotalQuestionsCorrect", totalQuestionsCorrect);
       commit("addToSumOfPercentage", totalQuestionsCorrect / totalQuestions);
+    },
+    resetStats: ({ commit }): void => {
+      commit("resetTotalQuizzesCompleted");
+      commit("resetTotalQuestionsAnswered");
+      commit("resetTotalQuestionsCorrect");
+      commit("resetSumOfPercentage");
     },
   },
 };

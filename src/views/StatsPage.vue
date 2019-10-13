@@ -29,8 +29,9 @@
         </tbody>
       </table>
     </div>
-
-    <button>Reset stats</button>
+    <div class="button-div">
+      <button type="button" class="btn btn-dark btn-lg" @click="doReset">Reset stats</button>
+    </div>
   </div>
 </template>
 
@@ -59,11 +60,20 @@ export default Vue.extend({
       ).toFixed(2);
     },
   },
+  methods: {
+    doReset(): void {
+      this.$store.dispatch("resetStats");
+    },
+  },
 });
 </script>
 
 <style scoped>
 .table--div {
   padding: 35px;
+}
+.button-div {
+  display: flex;
+  justify-content: center;
 }
 </style>
