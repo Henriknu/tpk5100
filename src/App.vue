@@ -68,18 +68,12 @@ export default Vue.extend({
   components: {},
   data: () => ({
     drawer: false,
-    isMobile: false,
     links: [
       { text: "Home", route: "/" },
       { text: "Quiz", route: "/quiz" },
       { text: "Stats", route: "/stats" },
     ],
   }),
-  beforeDestroy() {
-    if (typeof window !== "undefined") {
-      window.removeEventListener("resize", this.onResize);
-    }
-  },
 
   created() {
     console.log("Initating categories");
@@ -91,9 +85,20 @@ export default Vue.extend({
     window.addEventListener("resize", this.onResize, { passive: true });
   },
 
+  computed: {
+    isMobile() {
+      return this.$store.state.isMobile;
+    },
+  },
+  beforeDestroy() {
+    if (typeof window !== "undefined") {
+      window.removeEventListener("resize", this.onResize);
+    }
+  },
+
   methods: {
     onResize() {
-      this.isMobile = window.innerWidth < 600;
+      this.$store.commit("setIsMobile", window.innerWidth < 600);
     },
     goToPage(path: string) {
       if (this.$router.currentRoute.path !== path) this.$router.push(path);

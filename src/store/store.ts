@@ -13,6 +13,7 @@ export interface RootState {
   totalQuestionsAnswered: number;
   totalQuestionsCorrect: number;
   sumOfPercentage: number;
+  isMobile: boolean;
 }
 
 const store: StoreOptions<RootState> = {
@@ -24,6 +25,7 @@ const store: StoreOptions<RootState> = {
     totalQuestionsAnswered: 0,
     totalQuestionsCorrect: 0,
     sumOfPercentage: 0,
+    isMobile: window.innerWidth < 600,
   },
   getters: {
     getQuestions: (state): Question[] => {
@@ -88,6 +90,9 @@ const store: StoreOptions<RootState> = {
         q => q.question !== question.question
       );
       console.log(state.quiz!.questions);
+    },
+    setIsMobile: (state, isMobile: boolean): void => {
+      state.isMobile = isMobile;
     },
   },
   actions: {
