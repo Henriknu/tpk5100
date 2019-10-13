@@ -56,7 +56,7 @@ h1 {
   padding-right: 35px;
 }
 .container {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 </style>

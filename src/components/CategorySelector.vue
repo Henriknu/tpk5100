@@ -1,8 +1,6 @@
 <template>
   <div class="col">
-    <p>
-      Number of topics selected: {{ this.$store.state.chosenCategories.length }}
-    </p>
+    <p>Number of topics selected: {{ this.$store.state.chosenCategories.length }}</p>
     <div class="list--div">
       <ul class="custom--ul list-group">
         <a
@@ -16,8 +14,7 @@
           @click="toggle(cat)"
           role="button"
           class="list-group-item list-group-item-action"
-          >{{ cat.name }}</a
-        >
+        >{{ cat.name }}</a>
       </ul>
     </div>
   </div>
@@ -47,8 +44,10 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
   },
   methods: {
     ...mapMutations(["updateChosenCategories"]),
-    toggle(category: Category) {
-      this.updateChosenCategories(category);
+    toggle(category: Category): void {
+      if (this.$store.state.quiz == null) {
+        this.updateChosenCategories(category);
+      }
     },
   },
 });

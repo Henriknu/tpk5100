@@ -21,9 +21,14 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {
-      correctQuestions: this.$store.state.quiz!.correctQuestionsCounter,
-      initialLength: this.$store.state.quiz!.initialLength,
+      correctQuestions: 0,
+      initialLength: 0,
     };
+  },
+  created() {
+    this.correctQuestions = this.$store.state.quiz!.correctQuestionsCounter;
+    this.initialLength = this.$store.state.quiz!.initialLength;
+    this.$store.dispatch("onQuizCompleted");
   },
   computed: {
     precentage(): number {

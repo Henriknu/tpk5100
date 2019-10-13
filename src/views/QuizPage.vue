@@ -7,8 +7,12 @@
     <div>
       <CategorySelector />
     </div>
-    <div class="button-div">
+    <div v-if="this.$store.state.quiz == null" class="button-div">
       <v-btn @click="startQuiz" x-large class="quiz-start-button">Start Quiz</v-btn>
+    </div>
+    <div v-else class="button-div">
+      <v-btn @click="startQuiz" x-large class="quiz-start-button">Continue Quiz</v-btn>
+      <v-btn @click="startQuiz" x-large class="abandon-quiz--button">Abondon Quiz</v-btn>
     </div>
   </div>
 </template>
@@ -60,8 +64,12 @@ p {
 
 .button-div {
   display: flex;
+  flex-direction: column;
   padding-top: 1.5rem;
   padding-bottom: 3rem;
-  justify-content: center;
+  align-items: center;
+}
+.abandon-quiz--button {
+  margin-top: 20px;
 }
 </style>
