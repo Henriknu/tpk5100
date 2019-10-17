@@ -60,4 +60,7 @@ img {
 h1 {
   padding-right: 35px;
 }
+a {
+  padding-top: 8px;
+}
 </style>

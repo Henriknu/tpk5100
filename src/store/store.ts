@@ -55,6 +55,9 @@ const store: StoreOptions<RootState> = {
     setQuiz: (state, quiz: Quiz | null): void => {
       state.quiz = quiz;
     },
+    setLimit: (state, limit: number): void => {
+      state.limit = limit;
+    },
     incrementQuestionCounter: (state): void => {
       state.quiz!.questionCounter += 1;
     },
@@ -135,6 +138,9 @@ const store: StoreOptions<RootState> = {
     onQuizCompleted: ({ commit }): void => {
       commit("setChosenCategories", []);
       commit("setQuiz", null);
+    },
+    updateSettings: ({ commit }, { limit }): void => {
+      commit("setLimit", limit);
     },
   },
 };

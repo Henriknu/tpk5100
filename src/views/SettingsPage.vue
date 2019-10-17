@@ -10,8 +10,14 @@
           <span></span>
         </div>
         <label>Maximum number of questions asked pr Quiz</label>
-        <v-select :items="items" outlined placeholder="Limit"></v-select>
-        <v-btn>Save Settings</v-btn>
+        <v-select
+          v-model="value"
+          :items="items"
+          outlined
+          :placeholder="String(limit)"
+          @change="updateInputLimit(value)"
+        ></v-select>
+        <button @click="saveSettings" type="button" class="btn btn-dark btn-lg">Save Settings</button>
       </div>
     </div>
   </div>
@@ -23,12 +29,8 @@ export default Vue.extend({
   data() {
     return {
       items: [10, 15, 20, 30],
+      inputLimit: "",
     };
-  },
-  methods: {
-    back(): void {
-      this.$router.go(-1);
-    },
   },
   computed: {
     limit(): number {
@@ -36,6 +38,18 @@ export default Vue.extend({
     },
     isMobile(): boolean {
       return this.$store.state.isMobile;
+    },
+  },
+  methods: {
+    back(): void {
+      this.$router.go(-1);
+    },
+    saveSettings(): void {
+      this.$store.dispatch("updateSettings", { limit: this.inputLimit });
+    },
+    updateInputLimit(value: string): void {
+      this.inputLimit = value;
+      console.log(value);
     },
   },
 });
@@ -58,5 +72,8 @@ h1 {
 .container {
   padding-left: 45px;
   padding-right: 45px;
+}
+a {
+  padding-top: 8px;
 }
 </style>
