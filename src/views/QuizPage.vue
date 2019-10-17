@@ -8,11 +8,16 @@
       <CategorySelector />
     </div>
     <div v-if="notStartedQuiz" class="button-div">
-      <v-btn @click="startQuiz" x-large class="quiz-start-button">Start Quiz</v-btn>
+      <button
+        :class="[{ disabled: !selectedCategory }]"
+        @click="startQuiz"
+        type="button"
+        class="btn btn-dark btn-lg"
+      >Start Quiz</button>
     </div>
     <div v-else class="button-div">
-      <v-btn @click="continueQuiz" x-large class="quiz-start-button">Continue Quiz</v-btn>
-      <v-btn @click="abondonQuiz" x-large class="abandon-quiz--button">Abondon Quiz</v-btn>
+      <button @click="continueQuiz" type="button" class="btn btn-dark btn-lg">Continue Quiz</button>
+      <button @click="abondonQuiz" type="button" class="btn btn-dark btn-lg">Abondon Quiz</button>
     </div>
   </div>
 </template>
@@ -35,10 +40,12 @@ export default Vue.extend({
     notStartedQuiz(): boolean {
       return this.$store.state.quiz == null;
     },
+    selectedCategory(): boolean {
+      return this.$store.state.chosenCategories.length > 0;
+    },
   },
   methods: {
     startQuiz(): void {
-      const questions = this.$store.getters.getQuestions;
       function shuffleArray(array: Question[]): void {
         for (let i = array.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
@@ -47,13 +54,19 @@ export default Vue.extend({
           array[j] = temp;
         }
       }
-      shuffleArray(questions);
-      const end =
-        this.limit <= questions.length ? this.limit - 1 : questions.length - 1;
-      const sample = questions.slice(0, end);
-      const quiz = new Quiz(sample, this.limit);
-      this.$store.commit("setQuiz", quiz);
-      this.$router.push("/quizInstance");
+      if (this.selectedCategory) {
+        const questions = this.$store.getters.getQuestions;
+
+        shuffleArray(questions);
+        const end =
+          this.limit <= questions.length
+            ? this.limit - 1
+            : questions.length - 1;
+        const sample = questions.slice(0, end);
+        const quiz = new Quiz(sample, this.limit);
+        this.$store.commit("setQuiz", quiz);
+        this.$router.push("/quizInstance");
+      }
     },
     continueQuiz(): void {
       this.$router.push("/quizInstance");
