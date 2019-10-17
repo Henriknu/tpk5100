@@ -7,12 +7,12 @@
     <div>
       <CategorySelector />
     </div>
-    <div v-if="this.$store.state.quiz == null" class="button-div">
+    <div v-if="notStartedQuiz" class="button-div">
       <v-btn @click="startQuiz" x-large class="quiz-start-button">Start Quiz</v-btn>
     </div>
     <div v-else class="button-div">
-      <v-btn @click="startQuiz" x-large class="quiz-start-button">Continue Quiz</v-btn>
-      <v-btn @click="startQuiz" x-large class="abandon-quiz--button">Abondon Quiz</v-btn>
+      <v-btn @click="continueQuiz" x-large class="quiz-start-button">Continue Quiz</v-btn>
+      <v-btn @click="abondonQuiz" x-large class="abandon-quiz--button">Abondon Quiz</v-btn>
     </div>
   </div>
 </template>
@@ -31,6 +31,9 @@ export default Vue.extend({
   computed: {
     limit(): number {
       return this.$store.state.limit;
+    },
+    notStartedQuiz(): boolean {
+      return this.$store.state.quiz == null;
     },
   },
   methods: {
@@ -51,6 +54,12 @@ export default Vue.extend({
       const quiz = new Quiz(sample, this.limit);
       this.$store.commit("setQuiz", quiz);
       this.$router.push("/quizInstance");
+    },
+    continueQuiz(): void {
+      this.$router.push("/quizInstance");
+    },
+    abondonQuiz(): void {
+      this.$store.dispatch("onQuizCompleted");
     },
   },
 });

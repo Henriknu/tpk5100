@@ -7,7 +7,7 @@ Vue.use(Vuex);
 export interface RootState {
   categories: Category[];
   chosenCategories: Category[];
-  quiz?: Quiz;
+  quiz: Quiz | null;
   limit: number;
   totalQuizzesCompleted: number;
   totalQuestionsAnswered: number;
@@ -20,6 +20,7 @@ const store: StoreOptions<RootState> = {
   state: {
     categories: Array<Category>(),
     chosenCategories: Array<Category>(),
+    quiz: null,
     limit: 10,
     totalQuizzesCompleted: 0,
     totalQuestionsAnswered: 0,
@@ -51,7 +52,7 @@ const store: StoreOptions<RootState> = {
     setChosenCategories: (state, categories: Category[]): void => {
       state.chosenCategories = categories;
     },
-    setQuiz: (state, quiz: Quiz): void => {
+    setQuiz: (state, quiz: Quiz | null): void => {
       state.quiz = quiz;
     },
     incrementQuestionCounter: (state): void => {
