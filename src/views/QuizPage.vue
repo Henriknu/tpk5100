@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div :key="startedQuiz" class="container">
     <Nav header-text="Quiz"></Nav>
     <div class="p-category-div">
       <p>Select what topics you want to focus on.</p>
@@ -7,7 +7,7 @@
     <div>
       <CategorySelector />
     </div>
-    <div v-if="notStartedQuiz" class="button-div">
+    <div v-if="startedQuiz" class="button-div">
       <button
         :class="[{ disabled: !selectedCategory }]"
         @click="startQuiz"
@@ -37,11 +37,12 @@ export default Vue.extend({
     CategorySelector,
     Nav,
   },
+
   computed: {
     limit(): number {
       return this.$store.state.limit;
     },
-    notStartedQuiz(): boolean {
+    startedQuiz(): boolean {
       return this.$store.state.quiz == null;
     },
     selectedCategory(): boolean {
@@ -84,15 +85,14 @@ export default Vue.extend({
 
 <style scoped>
 p {
-  padding-top: 20px;
   padding-left: 35px;
 }
 
 .button-div {
   display: flex;
   flex-direction: column;
-  padding-top: 1.5rem;
-  padding-bottom: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   align-items: center;
 }
 .abandon-quiz--button {

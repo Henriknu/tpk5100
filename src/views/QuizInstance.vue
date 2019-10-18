@@ -117,6 +117,12 @@ img {
 }
 h4 {
   padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+p {
+  padding-left: 35px;
+  padding-right: 35px;
 }
 button {
   margin-top: 20px;

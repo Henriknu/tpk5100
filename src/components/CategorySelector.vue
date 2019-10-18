@@ -80,4 +80,7 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
 p {
   padding-left: 24px;
 }
+.col {
+  padding-top: 0px;
+}
 </style>
