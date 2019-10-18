@@ -4,6 +4,7 @@
       <a v-if="isMobile" @click="goToQuiz">
         <img src="../../public/img/icons8-go-back-96.png" alt="Go back" />
       </a>
+      <span v-else></span>
       <h1>Results</h1>
       <span></span>
     </div>

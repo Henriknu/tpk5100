@@ -17,7 +17,11 @@
     </div>
     <div v-else class="button-div">
       <button @click="continueQuiz" type="button" class="btn btn-dark btn-lg">Continue Quiz</button>
-      <button @click="abondonQuiz" type="button" class="btn btn-dark btn-lg">Abondon Quiz</button>
+      <button
+        @click="abondonQuiz"
+        type="button"
+        class="btn btn-dark btn-lg abandon-quiz--button"
+      >Abondon Quiz</button>
     </div>
   </div>
 </template>

@@ -1,8 +1,6 @@
 /* eslint-disable @typescript-eslint/unbound-method */
 <template>
   <v-app>
-    <v-app-bar v-if="false"></v-app-bar>
-
     <nav v-if="!isMobile" class="navbar custom-container navbar-expand-sm navbar-light bg-light">
       <a @click="goToPage('/')" class="navbar-brand mb-0 h1">Projectify</a>
       <ul class="navbar-nav mr-auto">
@@ -39,7 +37,7 @@
       </ul>
     </nav>
 
-    <v-bottom-navigation v-if="isMobile" fixed>
+    <v-bottom-navigation v-if="isMobile" app>
       <v-btn @click="goToPage('/')" value="home">
         <span>Home</span>
         <v-icon>mdi-home</v-icon>
@@ -77,8 +75,11 @@ export default Vue.extend({
   }),
 
   computed: {
-    isMobile() {
+    isMobile(): boolean {
       return this.$store.state.isMobile;
+    },
+    limit(): number {
+      return this.$store.state.limit;
     },
   },
 
@@ -109,6 +110,13 @@ export default Vue.extend({
 </script>
 
 <style>
+.v-bottom-navigation--fixed {
+  position: fixed !important;
+}
+
+.v-item-group.v-bottom-navigation .v-btn {
+  height: inherit !important;
+}
 .content-div {
   margin: auto;
 }

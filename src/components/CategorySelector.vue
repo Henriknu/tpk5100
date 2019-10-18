@@ -78,7 +78,6 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
   background-color: #c3e6cb;
 }
 p {
-  text-align: start;
   padding-left: 24px;
 }
 </style>
