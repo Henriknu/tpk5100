@@ -38,5 +38,15 @@ export default new Router({
       name: "settings",
       component: () => import("./views/SettingsPage.vue"),
     },
+    {
+      path: "/learnMore",
+      name: "learnMore",
+      component: () => import("./views/LearnMorePage.vue"),
+    },
+    {
+      path: "/chapter4",
+      name: "chapter4",
+      component: () => import("./views/chapters/Chapter4.vue"),
+    },
   ],
 });

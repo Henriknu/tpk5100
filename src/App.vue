@@ -13,6 +13,13 @@
         </li>
         <li class="nav-item">
           <a
+            :class="{ active: this.$router.currentRoute.name === 'learnMore' }"
+            @click="goToPage('/learnMore')"
+            class="nav-link"
+          >Learn more</a>
+        </li>
+        <li class="nav-item">
+          <a
             :class="{ active: this.$router.currentRoute.name === 'quiz' }"
             @click="goToPage('/quiz')"
             class="nav-link"
@@ -41,6 +48,11 @@
       <v-btn @click="goToPage('/')" value="home">
         <span>Home</span>
         <v-icon>mdi-home</v-icon>
+      </v-btn>
+      <v-btn @click="goToPage('/learnMore')" value="learnMore">
+        <span>more</span>
+        <span>Learn</span>
+        <v-icon>mdi-book-open-page-variant</v-icon>
       </v-btn>
       <v-btn @click="goToPage('/quiz')" value="quiz">
         <span>Quiz</span>
