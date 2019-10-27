@@ -59,7 +59,7 @@
         <v-icon>mdi-comment-question-outline</v-icon>
       </v-btn>
       <v-btn @click="goToPage('/stats')" value="stats">
-        <span class="no-after">Stats</span>
+        <span>Stats</span>
         <v-icon>mdi-chart-line</v-icon>
       </v-btn>
     </v-bottom-navigation>

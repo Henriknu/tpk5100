@@ -10,13 +10,7 @@
           <span></span>
         </div>
         <label>Maximum number of questions asked pr Quiz</label>
-        <v-select
-          v-model="value"
-          :items="items"
-          outlined
-          :placeholder="String(limit)"
-          @change="updateInputLimit(value)"
-        ></v-select>
+        <v-select :items="items" outlined :placeholder="String(limit)" @change="updateInputLimit"></v-select>
         <button @click="saveSettings" type="button" class="btn btn-dark btn-lg">Save Settings</button>
       </div>
     </div>
