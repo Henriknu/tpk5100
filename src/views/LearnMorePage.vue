@@ -3,6 +3,7 @@
     <Nav header-text="Learn more"></Nav>
     <div class="button-div">
       <button @click="goToChapter(4)" type="button" class="btn btn-dark btn-lg">Chapter 4</button>
+      <button @click="goToChapter(6)" type="button" class="btn btn-dark btn-lg">Chapter 6</button>
     </div>
   </div>
 </template>
@@ -26,6 +27,9 @@ export default Vue.extend({
 <style scoped>
 p {
   padding-left: 35px;
+}
+button {
+  margin: 10px;
 }
 .button-div {
   display: flex;
