@@ -454,6 +454,62 @@
           }
         ]
       }
+    },
+    {
+      "name": "Project Organization",
+      "summary": {
+        "questions": [
+          {
+            "question": "Identifying success factors upfront in projects ensures project success.",
+            "options": ["True", "False"],
+            "answerIndex": 1,
+            "explanation": "Project success is about the project’s ability to create value. Although it might be wise to identify the success factors, it is not given that this will lead to project success"
+          }
+        ]
+      },
+      "terms": {
+        "questions": [
+          {
+            "question": "Project success factors can be defined as:",
+            "options": [
+              "Measurable indicators used to assess project outcome",
+              "Ground rules we collect after completing the project",
+              "Measurable indicators used to assess project output",
+              "Ground rules that will govern the project"
+            ],
+            "answerIndex": 3,
+            "explanation": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "Project Planning",
+      "summary": {
+        "questions": [
+          {
+            "question": "Identifying success factors upfront in projects ensures project success.",
+            "options": ["True", "False"],
+            "answerIndex": 1,
+            "explanation": "Project success is about the project’s ability to create value. Although it might be wise to identify the success factors, it is not given that this will lead to project success"
+          }
+        ]
+      },
+      "terms": {
+        "questions": [
+          {
+            "question": "Project success factors can be defined as:",
+            "options": [
+              "Measurable indicators used to assess project outcome",
+              "Ground rules we collect after completing the project",
+              "Measurable indicators used to assess project output",
+              "Ground rules that will govern the project"
+            ],
+            "answerIndex": 3,
+            "explanation": ""
+          }
+        ]
+      }
     }
   ]
 }

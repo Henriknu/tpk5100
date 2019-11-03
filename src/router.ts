@@ -58,5 +58,10 @@ export default new Router({
       name: "chapter7",
       component: () => import("./views/chapters/Chapter7.vue"),
     },
+    {
+      path: "/chapter8",
+      name: "chapter8",
+      component: () => import("./views/chapters/Chapter8.vue"),
+    },
   ],
 });

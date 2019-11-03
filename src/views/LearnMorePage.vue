@@ -5,6 +5,7 @@
       <button @click="goToChapter(4)" type="button" class="btn btn-dark btn-lg">Chapter 4</button>
       <button @click="goToChapter(6)" type="button" class="btn btn-dark btn-lg">Chapter 6</button>
       <button @click="goToChapter(7)" type="button" class="btn btn-dark btn-lg">Chapter 7</button>
+      <button @click="goToChapter(8)" type="button" class="btn btn-dark btn-lg">Chapter 8</button>
     </div>
   </div>
 </template>
