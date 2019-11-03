@@ -29,10 +29,31 @@ const store: StoreOptions<RootState> = {
     isMobile: window.innerWidth < 600,
   },
   getters: {
-    getQuestions: (state): Question[] => {
+    getAllQuestions: (state): Question[] => {
       const questions: Question[] = [];
       state.chosenCategories.forEach(category => {
-        category.questions.forEach((question: Question) => {
+        category.summary.questions.forEach((question: Question) => {
+          questions.push(question);
+        });
+        category.terms.questions.forEach((question: Question) => {
+          questions.push(question);
+        });
+      });
+      return questions;
+    },
+    getTermsQuestions: (state): Question[] => {
+      const questions: Question[] = [];
+      state.chosenCategories.forEach(category => {
+        category.terms.questions.forEach((question: Question) => {
+          questions.push(question);
+        });
+      });
+      return questions;
+    },
+    getSummaryQuestions: (state): Question[] => {
+      const questions: Question[] = [];
+      state.chosenCategories.forEach(category => {
+        category.summary.questions.forEach((question: Question) => {
           questions.push(question);
         });
       });

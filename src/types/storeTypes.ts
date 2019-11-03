@@ -6,7 +6,12 @@ interface Question {
 
 interface Category {
   name: string;
-  questions: Question[];
+  terms: {
+    questions: Question[];
+  };
+  summary: {
+    questions: Question[];
+  };
 }
 
 class Quiz {

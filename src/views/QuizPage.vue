@@ -60,7 +60,7 @@ export default Vue.extend({
         }
       }
       if (this.selectedCategory) {
-        const questions = this.$store.getters.getQuestions;
+        const questions = this.$store.getters.getAllQuestions;
 
         shuffleArray(questions);
         const end =
