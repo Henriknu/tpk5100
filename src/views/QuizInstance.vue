@@ -30,7 +30,7 @@
     </div>
     <br />
     <div class="explaination-div">
-      <p v-if="answered">
+      <p v-if="answered && activeQuestion.explanation.length > 0">
         <b>Explanation</b>
         : {{ activeQuestion.explanation }}
       </p>
