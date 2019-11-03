@@ -29,7 +29,8 @@
 <script lang="ts">
 import CategorySelector from "../components/CategorySelector.vue";
 import Vue from "vue";
-import { Quiz, Question } from "../types/storeTypes";
+import { Quiz } from "../types/storeTypes";
+import shuffleArray from "../service/shuffle-service";
 import Nav from "../components/Nav.vue";
 
 export default Vue.extend({
@@ -51,17 +52,8 @@ export default Vue.extend({
   },
   methods: {
     startQuiz(): void {
-      function shuffleArray(array: Question[]): void {
-        for (let i = array.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          const temp = array[i];
-          array[i] = array[j];
-          array[j] = temp;
-        }
-      }
       if (this.selectedCategory) {
         const questions = this.$store.getters.getAllQuestions;
-
         shuffleArray(questions);
         const end =
           this.limit <= questions.length

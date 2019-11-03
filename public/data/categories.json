@@ -1,6 +1,26 @@
 {
   "categories": [
     {
+      "name": "Chapter 2",
+      "summary": { "questions": [] },
+      "terms": { "questions": [] }
+    },
+    {
+      "name": "Chapter 3",
+      "summary": { "questions": [] },
+      "terms": { "questions": [] }
+    },
+    {
+      "name": "Chapter 4",
+      "summary": { "questions": [] },
+      "terms": { "questions": [] }
+    },
+    {
+      "name": "Chapter 5",
+      "summary": { "questions": [] },
+      "terms": { "questions": [] }
+    },
+    {
       "name": "Project Success",
       "summary": {
         "questions": [

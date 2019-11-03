@@ -2,6 +2,7 @@ interface Question {
   question: string;
   options: string[];
   answerIndex: number;
+  explanation: string;
 }
 
 interface Category {

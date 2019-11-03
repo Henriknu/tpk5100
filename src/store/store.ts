@@ -41,21 +41,20 @@ const store: StoreOptions<RootState> = {
       });
       return questions;
     },
-    getTermsQuestions: (state): Question[] => {
+    //Minus 2 on index, because starting on chapter 2.
+    getTermsQuestions: state => (questionNumber: number): Question[] => {
       const questions: Question[] = [];
-      state.chosenCategories.forEach(category => {
-        category.terms.questions.forEach((question: Question) => {
-          questions.push(question);
-        });
+      const category: Category = state.categories[questionNumber - 2];
+      category.terms.questions.forEach((question: Question) => {
+        questions.push(question);
       });
       return questions;
     },
-    getSummaryQuestions: (state): Question[] => {
+    getSummaryQuestions: state => (questionNumber: number): Question[] => {
       const questions: Question[] = [];
-      state.chosenCategories.forEach(category => {
-        category.summary.questions.forEach((question: Question) => {
-          questions.push(question);
-        });
+      const category: Category = state.categories[questionNumber - 2];
+      category.summary.questions.forEach((question: Question) => {
+        questions.push(question);
       });
       return questions;
     },

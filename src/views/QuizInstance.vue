@@ -3,8 +3,7 @@
     <a @click="back">
       <img src="../../public/img/icons8-go-back-96.png" alt="Go back" />
     </a>
-    <h4>Question {{ questionIndex }}: {{ activeQuestion.question }}</h4>
-    <h4>Options:</h4>
+    <h5>Question {{ questionIndex }}: {{ activeQuestion.question }}</h5>
     <div class="list--div">
       <ul class="list-group">
         <a
@@ -28,6 +27,13 @@
           class="list-group-item list-group-item-action"
         >{{ index + 1 }} : {{ option }}</a>
       </ul>
+    </div>
+    <br />
+    <div class="explaination-div">
+      <p v-if="answered">
+        <b>Explanation</b>
+        : {{ activeQuestion.explanation }}
+      </p>
     </div>
     <div class="button-div">
       <button
@@ -115,7 +121,7 @@ img {
   width: 35px;
   padding-bottom: 20px;
 }
-h4 {
+h5 {
   padding-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
