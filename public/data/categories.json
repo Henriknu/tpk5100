@@ -2,7 +2,64 @@
   "categories": [
     {
       "name": "Chapter 2",
-      "summary": { "questions": [] },
+      "summary": {
+        "questions": [
+          {
+            "question": "Project characteristics is:",
+            "options": [
+              "What separates a project from a regular operational activity.",
+              "What separates one project from another."
+            ],
+            "answerIndex": 0,
+            "explanation": "See page 27"
+          },
+          {
+            "question": "What differentiates a project from a regular operational activity?",
+            "options": [
+              "A regular operational activity is a process of change.",
+              "A project must be carried out within certain restrictions.",
+              "A project always consists of people from one department only.",
+              "There is no difference."
+            ],
+            "answerIndex": 1,
+            "explanation": "“What separates projects from regular operational activities are the projects’ organizational complexity, projects being tools for change and helping implement and realize business objectives and strategy, the limitations the projects have to be completed within, as well as the uncertainty linked to the project and its completion.” (Page 27-31)"
+          },
+          {
+            "question": "Which of these factors contribute to increased organizational complexity in a project?",
+            "options": [
+              "Require people from different departments.",
+              "External personnel is needed.",
+              "Several different stakeholders.",
+              "All of the above"
+            ],
+            "answerIndex": 3,
+            "explanation": "“A project’s organizational complexity increases if several organizational unities and stakeholders are involved, if resources are brought in externally, and if the final product or service is complex in itself.” (Page 27)"
+          },
+          {
+            "question": "Projects only try to improve existing processes.",
+            "options": ["True", "False"],
+            "answerIndex": 1,
+            "explanation": "“Projects can change existing processes, products and services, but also come up with something completely unique.” (Page 28)"
+          },
+          {
+            "question": "A project’s uncertainty depends on the degree of innovation required to complete it.",
+            "options": [
+              "True",
+              "A project’s uncertainty is only dependent on the number of people working on the project.",
+              "A project will only experience uncertainty if the time of delivery is not clarified.",
+              "It is impossible to find a project’s uncertainty in advance."
+            ],
+            "answerIndex": 0,
+            "explanation": "“A project’s organizational complexity increases if several organizational unities and stakeholders are involved, if resources are brought in externally, and if the final product or service is complex in itself.” (Page 27)"
+          },
+          {
+            "question": "“Projects are used to realize and implement business goals and strategies.”",
+            "options": ["True", "False"],
+            "answerIndex": 0,
+            "explanation": "“Projects are important tools when it comes to implementing new and realizing existing business objectives and strategies.” (Page 28-29)"
+          }
+        ]
+      },
       "terms": { "questions": [] }
     },
     {

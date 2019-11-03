@@ -44,6 +44,11 @@ export default new Router({
       component: () => import("./views/LearnMorePage.vue"),
     },
     {
+      path: "/chapter2",
+      name: "chapter2",
+      component: () => import("./views/chapters/Chapter2.vue"),
+    },
+    {
       path: "/chapter4",
       name: "chapter4",
       component: () => import("./views/chapters/Chapter4.vue"),
