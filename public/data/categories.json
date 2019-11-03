@@ -1,72 +1,219 @@
 {
   "categories": [
     {
-      "name": "Project Characteristics",
-      "questions": [
-        {
-          "question": "Which of the options are not a Project Characteristic?",
-          "options": [
-            "Organizational complexity",
-            "Business perspective",
-            "Validity"
-          ],
-          "answerIndex": 2
-        },
-        {
-          "question": "Which of the options are not a common constraint in projects?",
-          "options": ["Time", "Specifications", "Competence"],
-          "answerIndex": 2
-        },
-        {
-          "question": "Uncertainty has strong correlation to constraints. ",
-          "options": ["True", "False"],
-          "answerIndex": 1
-        }
-      ]
-    },
-    {
-      "name": "Stakeholders",
-      "questions": [
-        {
-          "question": "Stakeholders should only be involved in the implementation phase.",
-          "options": ["True", "False"],
-          "answerIndex": 1
-        }
-      ]
-    },
-    {
-      "name": "Project Life Cycle",
-      "questions": [
-        {
-          "question": "Which of the options are not regular phases in a project?",
-          "options": ["Implementation", "Planning", "Marketing"],
-          "answerIndex": 2
-        }
-      ]
-    },
-    {
-      "name": "Project Initiation",
-      "questions": [
-        {
-          "question": "Purpose is usually defined in the initiation phase of the project.",
-          "options": ["True", "False"],
-          "answerIndex": 0
-        }
-      ]
-    },
-    {
       "name": "Project Success",
-      "questions": [
-        {
-          "question": "Purpose is usually defined in the initiation phase of the project.",
-          "options": ["True", "False"],
-          "answerIndex": 0
-        }
-      ]
-    },
-    { "name": "Success Factors" },
-    { "name": "Project Organization" },
-    { "name": "Project Planning" },
-    { "name": "Project Risk Management" }
+      "summary": {
+        "questions": [
+          {
+            "question": "A project that satisfy time and cost objectives but fails to create value:",
+            "options": [
+              "Project management success",
+              "Project management success, but project failure",
+              "Failure in terms of both project management and project",
+              "Success on all levels"
+            ],
+            "answerIndex": 1,
+            "explanation": "As project management success is about the project’s ability to satisfy the contextual and project constraints it will be considered a success if the time and cost objectives are withheld.
+            Project success is about the project’s ability to create value and thereby it would be considered a failure if this was not achieved."
+          },
+          {
+            "question": "A project that creates value to the client but fails to deliver on time or according to budget is a:
+            ",
+            "options": [
+              "Total success",
+              "Total failure",
+              "Project management failure",
+              "Project failure"
+            ],
+            "answerIndex": 2,
+            "explanation": "This is a project success as it has created value, however a project management failure because the project did not stay within the constraints of the project."
+          },
+          {
+            "question": "“Our goal is to deliver the project on time” is a:
+            ",
+            "options": [
+              "Success criterion",
+              "Success factor",
+              "Rational",
+              "Purpose statement"
+            ],
+            "answerIndex": 0,
+            "explanation": "It is a success criterion as it describes the desired outcome of the project.
+            "
+          },
+          {
+            "question": "“Our goal is to deliver the project with zero accidents” is a:
+            ",
+            "options": [
+              "Success factor",
+              "Success criterion",
+              "Scope statement
+              ",
+              "Risk factor"
+            ],
+            "answerIndex": 1,
+            "explanation": "It is a success criterion as it describes the desired outcome of the project."
+          },
+          {
+            "question": "“Empowering project team members” could be described as:
+            ",
+            "options": [
+              "Success factor",
+              "Scope statement",
+              "Risk factor",
+              "Success measure/criteria"
+            ],
+            "answerIndex": 0,
+            "explanation": "It is a success factor as it describes how the individuals in the project organization should act in order to achieve success."
+          },
+          {
+            "question": "“We shall adhere to our commitments” is a:",
+            "options": [
+              "Success factor",
+              "Objective",
+              "Risk factor",
+              "Success criterion"
+            ],
+            "answerIndex": 0,
+            "explanation": "It is a success factor as it describes how the individuals in the project organization should act in order to achieve success."
+          },
+          {
+            "question": "Achieving project management success is a prerequisite for achieving project success.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answerIndex": 1,
+            "explanation": "Project management success is about the project’s ability to satisfy the contextual and project constraints, while project success is about the project’s ability to create value. As it is possible to satisfy one or the other this is false."
+          },
+          {
+            "question": "Project management failure lead to project failure.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answerIndex": 1,
+            "explanation": "Project management success is about the project’s ability to satisfy the contextual and project constraints, while project success is about the project’s ability to create value. As it is possible to satisfy one or the other this is false."
+          },
+          {
+            "question": "The definition of success in project has changed from:",
+            "options": [
+              "Being limited to the project life cycle to the entire life cycle of the product or service",
+              "Entailing the entire product life cycle to being limited to the project life cycle",
+              "Being limited to the project life cycle to entailing several projects completed by the same project organization",
+            ],
+            "answerIndex": 0,
+            "explanation": "There exist several models that describe and classify the success factors of the project several years after completion and from the views of various stakeholders."
+          },
+          {
+            "question": "Which of the following is not one of the four types of success according to Shenhar:",
+            "options": [
+              "Project management success",
+              "Benefits for the client",
+              "Business success for the parent organization",
+              "Process success",
+              "Future success"
+            ],
+            "answerIndex": 3,
+            "explanation": "See p. 55."
+          },
+          {
+            "question": "The subjective approach of defining success criteria  assume that estimated time and cost of the project can be predicted in the beginning.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answerIndex": 1,
+            "explanation": "This is an assumption of the objective approach."
+          },
+          {
+            "question": "The objective approach of defining success criteria  assume that all stakeholders will have the perception of the project",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answerIndex": 0,
+            "explanation": "This assumption is true, and is the main difference between the objective and the subjective approach. More information can be found at p. 54 in Road to Success."
+          },
+          {
+            "question": "The first researcher to propose the distinction between project management success and project success was:",
+            "options": [
+              "de Wit",
+              "Shenar",
+              "Murphy",
+              "Wilson and Howcroft",
+              "Cooke-Davis"
+            ],
+            "answerIndex": 0,
+            "explanation": "More information can be found at p. 55 in Road to Success."
+          },
+          {
+            "question": "Wilson and Howcroft are important in project management literature as they:",
+            "options": [
+              "Illustrated that the subjective evaluation of whether a project was a success or not is merely a way of legitimize the events of the project",
+              "Linked project management success to process success and established several guidelines for businesses to achieve these"
+            ],
+            "answerIndex": 0,
+            "explanation": "More information can be found at p. 55-58 in Road to Success. Cooke-Davis developed the model describing the success factor categories."
+          }   
+        ]
+      },
+      "terms": {
+        "questions": [
+          {
+            "question": "Project success is about:",
+            "options": [
+              "how certain stakeholders perceive project implementation phase.",
+              "the ability of the project to create value",
+              "satisfying various project and contextual constraints"
+            ],
+            "answerIndex": 1,
+            "explanation": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          },
+          {
+            "question": "Process success is about:",
+            "options": [
+              "how certain stakeholders perceive project implementation phase.",
+              "the ability of the project to create value.",
+              "satisfying various project and contextual constraints."
+            ],
+            "answerIndex": 0,
+            "explanation": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          },  
+          {
+            "question": "Project management success is about:",
+            "options": [
+              "how certain stakeholders perceive project implementation phase.",
+              "the ability of the project to create value",
+              "satisfying various project and contextual constraints"
+            ],
+            "answerIndex": 2,
+            "explanation": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          },  
+          {
+            "question": "A success factor is:",
+            "options": [
+              "Measurable indicators used to assess project outcome",
+              "Ground rules we collect after completing the project",
+              "Activities that should be followed during project planning and execution"
+            ],
+            "answerIndex": 2,
+            "explanation": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          },  
+          {
+            "question": "Success criterion is:",
+            "options": [
+              "Measurable indicators used to assess project outcome",
+              "Ground rules we collect after completing the project",
+              "Activities that should be followed during project planning and execution"
+            ],
+            "answerIndex": 0,
+            "explanation": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          }
+        ]
+
+      }
+      
+    }
   ]
 }
