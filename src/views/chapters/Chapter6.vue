@@ -132,7 +132,11 @@
         type="button"
         class="btn btn-dark btn-lg test-button"
       >Test terms</button>
-      <button type="button" class="btn btn-dark btn-lg test-button">Test summary</button>
+      <button
+        @click="startSummaryQuiz"
+        type="button"
+        class="btn btn-dark btn-lg test-button"
+      >Test summary</button>
     </div>
   </div>
 </template>
@@ -156,6 +160,13 @@ export default Vue.extend({
     },
     startTermsQuiz(): void {
       const questions = this.$store.getters.getTermsQuestions(6);
+      shuffleArray(questions);
+      const quiz = new Quiz(questions, this.limit, false, 6);
+      this.$store.commit("setQuiz", quiz);
+      this.$router.push("/quizInstance");
+    },
+    startSummaryQuiz(): void {
+      const questions = this.$store.getters.getSummaryQuestions(6);
       shuffleArray(questions);
       const quiz = new Quiz(questions, this.limit, false, 6);
       this.$store.commit("setQuiz", quiz);
