@@ -13,12 +13,10 @@
               "Success on all levels"
             ],
             "answerIndex": 1,
-            "explanation": "As project management success is about the project’s ability to satisfy the contextual and project constraints it will be considered a success if the time and cost objectives are withheld.
-            Project success is about the project’s ability to create value and thereby it would be considered a failure if this was not achieved."
+            "explanation": "As project management success is about the project’s ability to satisfy the contextual and project constraints it will be considered a success if the time and cost objectives are withheld. Project success is about the project’s ability to create value and thereby it would be considered a failure if this was not achieved."
           },
           {
-            "question": "A project that creates value to the client but fails to deliver on time or according to budget is a:
-            ",
+            "question": "A project that creates value to the client but fails to deliver on time or according to budget is a:",
             "options": [
               "Total success",
               "Total failure",
@@ -29,8 +27,7 @@
             "explanation": "This is a project success as it has created value, however a project management failure because the project did not stay within the constraints of the project."
           },
           {
-            "question": "“Our goal is to deliver the project on time” is a:
-            ",
+            "question": "“Our goal is to deliver the project on time” is a:",
             "options": [
               "Success criterion",
               "Success factor",
@@ -38,25 +35,21 @@
               "Purpose statement"
             ],
             "answerIndex": 0,
-            "explanation": "It is a success criterion as it describes the desired outcome of the project.
-            "
+            "explanation": "It is a success criterion as it describes the desired outcome of the project."
           },
           {
-            "question": "“Our goal is to deliver the project with zero accidents” is a:
-            ",
+            "question": "“Our goal is to deliver the project with zero accidents” is a:",
             "options": [
               "Success factor",
               "Success criterion",
-              "Scope statement
-              ",
+              "Scope statement",
               "Risk factor"
             ],
             "answerIndex": 1,
             "explanation": "It is a success criterion as it describes the desired outcome of the project."
           },
           {
-            "question": "“Empowering project team members” could be described as:
-            ",
+            "question": "“Empowering project team members” could be described as:",
             "options": [
               "Success factor",
               "Scope statement",
@@ -79,19 +72,13 @@
           },
           {
             "question": "Achieving project management success is a prerequisite for achieving project success.",
-            "options": [
-              "True",
-              "False"
-            ],
+            "options": ["True", "False"],
             "answerIndex": 1,
             "explanation": "Project management success is about the project’s ability to satisfy the contextual and project constraints, while project success is about the project’s ability to create value. As it is possible to satisfy one or the other this is false."
           },
           {
             "question": "Project management failure lead to project failure.",
-            "options": [
-              "True",
-              "False"
-            ],
+            "options": ["True", "False"],
             "answerIndex": 1,
             "explanation": "Project management success is about the project’s ability to satisfy the contextual and project constraints, while project success is about the project’s ability to create value. As it is possible to satisfy one or the other this is false."
           },
@@ -100,7 +87,7 @@
             "options": [
               "Being limited to the project life cycle to the entire life cycle of the product or service",
               "Entailing the entire product life cycle to being limited to the project life cycle",
-              "Being limited to the project life cycle to entailing several projects completed by the same project organization",
+              "Being limited to the project life cycle to entailing several projects completed by the same project organization"
             ],
             "answerIndex": 0,
             "explanation": "There exist several models that describe and classify the success factors of the project several years after completion and from the views of various stakeholders."
@@ -119,19 +106,13 @@
           },
           {
             "question": "The subjective approach of defining success criteria  assume that estimated time and cost of the project can be predicted in the beginning.",
-            "options": [
-              "True",
-              "False"
-            ],
+            "options": ["True", "False"],
             "answerIndex": 1,
             "explanation": "This is an assumption of the objective approach."
           },
           {
             "question": "The objective approach of defining success criteria  assume that all stakeholders will have the perception of the project",
-            "options": [
-              "True",
-              "False"
-            ],
+            "options": ["True", "False"],
             "answerIndex": 0,
             "explanation": "This assumption is true, and is the main difference between the objective and the subjective approach. More information can be found at p. 54 in Road to Success."
           },
@@ -155,7 +136,7 @@
             ],
             "answerIndex": 0,
             "explanation": "More information can be found at p. 55-58 in Road to Success. Cooke-Davis developed the model describing the success factor categories."
-          }   
+          }
         ]
       },
       "terms": {
@@ -179,7 +160,7 @@
             ],
             "answerIndex": 0,
             "explanation": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-          },  
+          },
           {
             "question": "Project management success is about:",
             "options": [
@@ -189,7 +170,7 @@
             ],
             "answerIndex": 2,
             "explanation": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-          },  
+          },
           {
             "question": "A success factor is:",
             "options": [
@@ -199,7 +180,7 @@
             ],
             "answerIndex": 2,
             "explanation": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-          },  
+          },
           {
             "question": "Success criterion is:",
             "options": [
@@ -211,9 +192,7 @@
             "explanation": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
           }
         ]
-
       }
-      
     }
   ]
 }
