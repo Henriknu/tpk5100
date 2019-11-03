@@ -213,6 +213,247 @@
           }
         ]
       }
+    },
+    {
+      "name": "Success Factors",
+      "summary": {
+        "questions": [
+          {
+            "question": "Identifying success factors upfront in projects ensures project success.",
+            "options": ["True", "False"],
+            "answerIndex": 1,
+            "explanation": "Project success is about the project’s ability to create value. Although it might be wise to identify the success factors, it is not given that this will lead to project success"
+          },
+          {
+            "question": "Which statement is true regarding structural success factors:",
+            "options": [
+              "Generalizable and correlated with project characteristics",
+              "Generalizable and independent of project characteristics",
+              "Project specific"
+            ],
+            "answerIndex": 0,
+            "explanation": "A structural success factor describes what the people within the project organization and its stakeholders can do in order to achieve success. It may be linked with certain project characteristics, and thus, they are generalizable."
+          },
+          {
+            "question": "Which of the following is not a structural success factor:",
+            "options": [
+              "Adequate early planning",
+              "End-user/client/stakeholders involvement",
+              "Collaboration (“One team”)",
+              "Trust"
+            ],
+            "answerIndex": 3,
+            "explanation": "Trust is a cultural factor, also known as a soft factor."
+          },
+          {
+            "question": "Which statement is true regarding cultural success factors:",
+            "options": [
+              "Generalizable and correlated with project characteristics",
+              "Generalizable and independent of project characteristics",
+              "Project specific"
+            ],
+            "answerIndex": 1,
+            "explanation": "Cultural success factors describe elements regarding the culture within the organization and with its stakeholders that should be in place in order to achieve success. They are generalizable across project characteristics. There is no ideal culture in the existence of a certain project characteristic."
+          },
+          {
+            "question": "Which of the following is not a cultural success factor:",
+            "options": [
+              "Adequate information flow to stakeholders",
+              "Loyalty",
+              "Openness",
+              "Commitment"
+            ],
+            "answerIndex": 0,
+            "explanation": "Adequate information flow to stakeholders is a structural success factor that is important if the project has a high level of complexity."
+          },
+          {
+            "question": "End-user/stakeholders’ involvement is a critical success factor in a project that:",
+            "options": [
+              "Is organisationally complex",
+              "Has high level of intended transformation",
+              "Has many constraints",
+              "Has high level of uncertainty"
+            ],
+            "answerIndex": 1,
+            "explanation": "To achieve the intended transformation the involvement of stakeholders is a critical success factor as it is important to create a willingness and desire for change among the stakeholders for the transformation to set foot."
+          },
+          {
+            "question": "Cultural factors must be complied with in order to be able to:",
+            "options": [
+              "Manage project complexity",
+              "Manage project uncertainty",
+              "To create positive and good working environment",
+              "Manage owner expectations"
+            ],
+            "answerIndex": 2,
+            "explanation": "Cultural factors describes elements regarding the culture within the organization and with its stakeholders that should be in place in order to achieve success. Hence certain cultural factors will have a great impact on the working environment."
+          },
+          {
+            "question": "Project management failure lead to project failure.",
+            "options": ["True", "False"],
+            "answerIndex": 1,
+            "explanation": "Project management success is about the project’s ability to satisfy the contextual and project constraints, while project success is about the project’s ability to create value. As it is possible to satisfy one or the other this is false."
+          },
+          {
+            "question": "“Common understanding of the importance of the project to the entire organization” is a critical success factor when there is a high level of/many:",
+            "options": [
+              "Organizational complexity",
+              "Transformation",
+              "Business Impact",
+              "Constraints",
+              "Uncertainty"
+            ],
+            "answerIndex": 2,
+            "explanation": "When the project has a great impact on business it is important to create ownership and dedication to the objectives of the project. This is usually accomplished by creating a common understanding for the importance of the project."
+          },
+          {
+            "question": "Having clear roles and responsibilities” is a critical success factor when there is a high level of/many:",
+            "options": [
+              "Organizational complexity",
+              "Transformation",
+              "Business Impact",
+              "Constraints",
+              "Uncertainty"
+            ],
+            "answerIndex": 0,
+            "explanation": "Clear roles and responsibilities are important if there is a high level of organizational complexity as these projects often run parallelly with other tasks. In this case it is important to ensure that the individuals know what they need to ensure progress in the project."
+          },
+          {
+            "question": "“Project leader authority” is a critical success factor when there is a high level of/many:",
+            "options": [
+              "Organizational complexity",
+              "Transformation",
+              "Business Impact",
+              "Constraints",
+              "Uncertainty"
+            ],
+            "answerIndex": 0,
+            "explanation": "This success factor is critical to ensure progress in the project."
+          },
+          {
+            "question": "“Routines for deviation” is a critical success factor when there is a high level of/many:",
+            "options": [
+              "Organizational complexity",
+              "Transformation",
+              "Business Impact",
+              "Constraints",
+              "Uncertainty"
+            ],
+            "answerIndex": 3,
+            "explanation": "Routines for deviation is important to ensure efficient handling of problems and/or deviation, as this will reduce the risk of extra costs, lower quality and time overruns."
+          },
+          {
+            "question": "“Project manager has adequate business insights” is a critical success factor when there is a high level of/many:",
+            "options": [
+              "Organizational complexity",
+              "Transformation",
+              "Business Impact",
+              "Constraints",
+              "Uncertainty"
+            ],
+            "answerIndex": 1,
+            "explanation": "In order to convince stakeholders that the transformation is in their best interests, it is important that the project manager understands the needs and impact of various stakeholders and include them when necessary."
+          },
+          {
+            "question": "“Experienced project manager and project group” is a critical success factor when there is a high level of/many:",
+            "options": [
+              "Organizational complexity",
+              "Transformation",
+              "Business Impact",
+              "Constraints",
+              "Uncertainty"
+            ],
+            "answerIndex": 4,
+            "explanation": "When there is a high level of uncertainty it is easier to handle deviation and elements of uncertainty when the project organization holds the “right” expertise."
+          },
+          {
+            "question": "According to Gutierrez and Hussein, normative conformity may lead to:",
+            "options": [
+              "Increased motivation",
+              "Increased team efficiency",
+              "Loss of creativity",
+              "Facilitated communication"
+            ],
+            "answerIndex": 2,
+            "explanation": "Normative conformity is a change in behavior or belief as a result one’s desire to fulfill others’ expectations and gain acceptance. Often individuals fear expressing their opinions and ideas, hence losing valuable insight and creativity."
+          }
+        ]
+      },
+      "terms": {
+        "questions": [
+          {
+            "question": "Project success factors can be defined as:",
+            "options": [
+              "Measurable indicators used to assess project outcome",
+              "Ground rules we collect after completing the project",
+              "Measurable indicators used to assess project output",
+              "Ground rules that will govern the project"
+            ],
+            "answerIndex": 3,
+            "explanation": ""
+          },
+          {
+            "question": "“Demands that describe how the requirements should be implemented, outlining the solution” is a/are",
+            "options": [
+              "Risk limiting process",
+              "Excessive requirements",
+              "One team approach"
+            ],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "A project is organizational complex when:",
+            "options": [
+              "It requires contribution from multiple organizational units",
+              "The problem has many constraints complicating the project",
+              "There is a high level of uncertainty",
+              "It requires competent people"
+            ],
+            "answerIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Loyalty and affiliation towards an organization that one is working with is:",
+            "options": ["Enthusiasm", "Flexibility", "Trust", "Openness"],
+            "answerIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "The extent to which one party is willing to depend on somebody, or something, in a given situation with a feeling of relative security is:",
+            "options": ["Enthusiasm", "Flexibility", "Trust", "Openness"],
+            "answerIndex": 2,
+            "explanation": ""
+          },
+          {
+            "question": "Normative conformity is:",
+            "options": [
+              "a cognitive bias that causes us to attribute too much weight to past events and translate them into future expectations",
+              "a change in behavior or belief as a result one’s desire to fulfill others’ expectations and gain acceptance"
+            ],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "The focusing effect is:",
+            "options": [
+              "a behavioral bias that occurs when human decision-making process attempt to satisfice",
+              "a cognitive bias that causes us to attribute too much weight to past events and translate them into future expectations."
+            ],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "Bounded rationality is:",
+            "options": [
+              "a behavioral bias that occurs when human decision-making process attempt to satisfice",
+              "a cognitive bias that causes us to attribute too much weight to past events and translate them into future expectations."
+            ],
+            "answerIndex": 0,
+            "explanation": ""
+          }
+        ]
+      }
     }
   ]
 }
