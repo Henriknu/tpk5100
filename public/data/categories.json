@@ -510,6 +510,157 @@
           }
         ]
       }
+    },
+    {
+      "name": "Risk management",
+      "summary": {
+        "questions": [
+          {
+            "question": "What may be the possible benefits of risk management?",
+            "options": [
+              "Increased chance of project success",
+              "Cost savings",
+              "Modified objectives",
+              "Options 1 and 3 are correct"
+            ],
+            "answerIndex": 0,
+            "explanation": "«Increased chance» of project success is the only benefits out of the options above that is explicitly mentioned on page 151."
+          },
+          {
+            "question": "What are the key aspects of risk management?",
+            "options": [
+              "Risk identifying, analysing and management",
+              "Risk identifying, avoidance and management",
+              "Risk avoidance, management and acceptance",
+              "Risk identifying, analysing and acceptance"
+            ],
+            "answerIndex": 0,
+            "explanation": "On page 151, Pinto(2013) defines risk management as «the art and science of of identifying, analysing and managing risk throughout the project life cycle..»"
+          },
+          {
+            "question": "What are the most important prerequisites when dealing with risk management?",
+            "options": [
+              "Skills in risk management",
+              "The project status and aspects",
+              "Necessary time to risk response",
+              "All of the above options are correct"
+            ],
+            "answerIndex": 3,
+            "explanation": "«See the last bullet point on page 152."
+          },
+          {
+            "question": "What are not part of the risk management process?",
+            "options": [
+              "Risk identification and assessment",
+              "Risk acceptance and avoidance",
+              "Risk monitoring and response planning",
+              "Risk identification and monitoring"
+            ],
+            "answerIndex": 1,
+            "explanation": "The risk management process consists of risk identification, risk assessment, risk response planning and risk monitoring and control. See page 152."
+          },
+          {
+            "question": "What are the two most important aspects considered in risk assessment?",
+            "options": [
+              "Event/factor predictability and correlation with other events/factors",
+              "Event/factor probability and consequence",
+              "Event/factor frequency and impact",
+              "All of the above options are correct"
+            ],
+            "answerIndex": 1,
+            "explanation": "As indicated in Figure 24 on page 154, the two most important aspects to be considered are event/factor probability and consequence."
+          },
+          {
+            "question": "In risk management, project stakeholders should not be involved.",
+            "options": ["True", "False"],
+            "answerIndex": 1,
+            "explanation": "On page 153, stakeholder involvement is mentioned as an element in the risk identification process."
+          },
+          {
+            "question": "What are the most important aspects needing consideration when deriving risk response?",
+            "options": [
+              "Project characteristics and the risk situation",
+              "The risk implication for the project’s objectives",
+              "Risk measures consequences for future projects",
+              "Options 1 and 2 are correct"
+            ],
+            "answerIndex": 3,
+            "explanation": "On page 155, project characteristics, the risk situation and the risk implication for the project’s objectives are listed as aspects needing consideration."
+          },
+          {
+            "question": "An important element in risk monitoring and control is risk register",
+            "options": ["True", "False"],
+            "answerIndex": 0,
+            "explanation": "It is a good practice to use a risk register. See page 155."
+          },
+          {
+            "question": "What should the risk register contain?",
+            "options": [
+              "Risk description and severity",
+              "Measures and the responsible",
+              "Measures status and consequences",
+              "All of the above"
+            ],
+            "answerIndex": 3,
+            "explanation": "These elements are listed in the columns in table 31 on page 155."
+          },
+          {
+            "question": "What types of risk exist in projects?",
+            "options": [
+              "Product-related and contextual factors",
+              "Organizational and people-related factors",
+              "Changing willingness to undertake risk",
+              "Options 1 and 2 are correct"
+            ],
+            "answerIndex": 3,
+            "explanation": "In table 32 on page 156, the types of risk are divided into product, organizational, people and context."
+          },
+          {
+            "question": "Typical examples of product-related risk factors are",
+            "options": [
+              "Infrastructure to support the product or service",
+              "Ripple effects on the surroundings",
+              "Government regulations",
+              "Options 1 and 2 are correct"
+            ],
+            "answerIndex": 3,
+            "explanation": "Infrastructure to support the product or service and the ripple effect on the surroundings are listed among some of the examples of product-related risk factors. See page 156."
+          },
+          {
+            "question": "Government regulations do not pose a risk to a project",
+            "options": ["True", "False"],
+            "answerIndex": 1,
+            "explanation": "Government regulations are listed as an example of context-related factors. Therefore, government regulations pose a risk to projects. See page 159."
+          },
+          {
+            "question": "Work culture is an example of organizational risk factor",
+            "options": ["True", "False"],
+            "answerIndex": 0,
+            "explanation": "Work culture is listed as an example of organization-related factors - Therefore, work culture poses a risk to projects. See page 158."
+          }
+        ]
+      },
+      "terms": {
+        "questions": [
+          {
+            "question": "Risk management refers to:",
+            "options": [
+              "Risk identifying",
+              "Risk analysing",
+              "Risk management",
+              "All of the above"
+            ],
+            "answerIndex": 3,
+            "explanation": "Risk management refers to risk identifying, analysing and management. See page 151 or Pinto (2013)."
+          },
+          {
+            "question": "The risk management process is a human-based process with some associated problems.",
+            "options": ["True", "False"],
+            "answerIndex": 0,
+            "explanation": "See page 151."
+          }
+        ]
+      }
     }
   ]
 }
