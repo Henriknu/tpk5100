@@ -60,7 +60,7 @@ export default Vue.extend({
             ? this.limit - 1
             : questions.length - 1;
         const sample = questions.slice(0, end);
-        const quiz = new Quiz(sample, this.limit);
+        const quiz = new Quiz(sample, this.limit, true);
         this.$store.commit("setQuiz", quiz);
         this.$router.push("/quizInstance");
       }

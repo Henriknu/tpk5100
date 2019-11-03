@@ -22,13 +22,22 @@ class Quiz {
   questionCounter: number;
   correctQuestionsCounter: number;
   initialLength: number;
-  constructor(questions: Question[], limit: number) {
+  redirectToQuiz: boolean;
+  chapterNumber: number | undefined;
+  constructor(
+    questions: Question[],
+    limit: number,
+    redirectToQuiz: boolean,
+    chapterNumber?: number
+  ) {
     this.questions = questions;
     this.points = 0;
     this.limit = limit;
     this.questionCounter = 1;
     this.correctQuestionsCounter = 0;
     this.initialLength = questions.length;
+    this.redirectToQuiz = redirectToQuiz;
+    this.chapterNumber = chapterNumber;
   }
 }
 

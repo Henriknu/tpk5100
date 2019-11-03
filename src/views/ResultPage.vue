@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="header--div">
-      <a v-if="isMobile" @click="goToQuiz">
+      <a v-if="isMobile" @click="redirectToQuiz ? goToQuiz : goToChapter(chapterNumber)">
         <img src="../../public/img/icons8-go-back-96.png" alt="Go back" />
       </a>
       <span v-else></span>
@@ -24,11 +24,17 @@ export default Vue.extend({
     return {
       correctQuestions: 0,
       initialLength: 0,
+      redirectToQuiz: true,
+      chapterNumber: 0,
     };
   },
   created() {
     this.correctQuestions = this.$store.state.quiz!.correctQuestionsCounter;
     this.initialLength = this.$store.state.quiz!.initialLength;
+    this.redirectToQuiz = this.$store.state.quiz!.redirectToQuiz;
+    if (this.$store.state.quiz!.chapterNumber)
+      this.chapterNumber = this.$store.state.quiz!.chapterNumber;
+
     this.$store.dispatch("onQuizCompleted");
   },
   computed: {
@@ -42,6 +48,9 @@ export default Vue.extend({
   methods: {
     goToQuiz(): void {
       this.$router.push("/quiz");
+    },
+    goToChapter(chapterIndex: number): void {
+      this.$router.push(`chapter${chapterIndex}`);
     },
   },
 });
