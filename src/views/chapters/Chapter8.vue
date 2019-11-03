@@ -140,7 +140,7 @@ export default Vue.extend({
   },
   methods: {
     goBack(): void {
-      this.$router.go(-1);
+      this.$router.push("/learnMore");
     },
     startTermsQuiz(): void {
       const questions = this.$store.getters.getTermsQuestions(8);

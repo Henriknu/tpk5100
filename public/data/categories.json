@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "name": "Chapter 2",
+      "name": "Project Characteristics",
       "summary": {
         "questions": [
           {
@@ -45,9 +45,9 @@
             "question": "A project’s uncertainty depends on the degree of innovation required to complete it.",
             "options": [
               "True",
-              "A project’s uncertainty is only dependent on the number of people working on the project.",
-              "A project will only experience uncertainty if the time of delivery is not clarified.",
-              "It is impossible to find a project’s uncertainty in advance."
+              "False. A project’s uncertainty is only dependent on the number of people working on the project.",
+              "False. A project will only experience uncertainty if the time of delivery is not clarified.",
+              "False. It is impossible to find a project’s uncertainty in advance."
             ],
             "answerIndex": 0,
             "explanation": "“A project’s organizational complexity increases if several organizational unities and stakeholders are involved, if resources are brought in externally, and if the final product or service is complex in itself.” (Page 27)"
@@ -64,8 +64,105 @@
     },
     {
       "name": "Chapter 3",
-      "summary": { "questions": [] },
-      "terms": { "questions": [] }
+      "summary": {
+        "questions": [
+          {
+            "question": "What statement is most correct regarding stakeholders?",
+            "options": [
+              "A stakeholder can not have both interest in and influence over the project.",
+              "The stakeholders of a project can only be individual persons.",
+              "A stakeholder is always influenced by the result of the project.",
+              "A stakeholder does not necessarily have influence over the project."
+            ],
+            "answerIndex": 3,
+            "explanation": "“A stakeholder is an individual or a group of individuals who are affected by or able to influence the project.” (Page 34)"
+          },
+          {
+            "question": "Which of these expectations is most likely to belong to the projects end user?",
+            "options": [
+              "The project being profitable.",
+              "The organization’s reputation growing.",
+              "New functionalities.",
+              "Compliance with rules."
+            ],
+            "answerIndex": 2,
+            "explanation": "“A stakeholder is an individual or a group of individuals who are affected by or able to influence the project.” (Page 34)"
+          },
+          {
+            "question": "In a stakeholder mapping the most common is to look at the stakeholders’ influence over and involvement in the project.",
+            "options": [
+              "True",
+              "False. The most common is to look at their interest and involvement in the project.",
+              "False. The most common is just to look at their interest in the project.",
+              "False. The most common is to look at their influence over and interest in the project."
+            ],
+            "answerIndex": 3,
+            "explanation": "“The most common way to map stakeholders is using their influence over and interest in the project along the axis.” (Page 34)"
+          },
+          {
+            "question": "In a stakeholder mapping, which stakeholder should have the highest priority?",
+            "options": [
+              "Stakeholders with high influence and high interest.",
+              "Stakeholders with high influence and low interest",
+              "Stakeholders with low influence and high interest",
+              "Stakeholders with low influence and low interest"
+            ],
+            "answerIndex": 0,
+            "explanation": "“Stakeholders with a high influence over and interest in the project should be considered key stakeholders. They should be closely involved in the process and have their requirements and expectations towards the project closely considered.” (Page 36-37)"
+          },
+          {
+            "question": "In a stakeholder mapping, which stakeholder should have the lowest priority?",
+            "options": [
+              "Stakeholders with high influence and high interest.",
+              "Stakeholders with high influence and low interest",
+              "Stakeholders with low influence and high interest",
+              "Stakeholders with low influence and low interest"
+            ],
+            "answerIndex": 3,
+            "explanation": "“The stakeholders with a low influence over and interest in the project should have the lowest priority, but as their influence and interest might change over time they must be monitored in order to detect these changes and take actions accordingly.” (Page 38)"
+          },
+          {
+            "question": "Stakeholders with low influence over and interest in the project can be ignored all together.",
+            "options": ["True", "False"],
+            "answerIndex": 1,
+            "explanation": "“The stakeholders with low influence over and interest in the project should be monitored in case this situation changes.” (Page 38)"
+          }
+        ]
+      },
+      "terms": {
+        "questions": [
+          {
+            "question": "A stakeholder is an individual or group who:",
+            "options": [
+              "Affected by or able to influence the project.",
+              "Ordered the project be carried out."
+            ],
+            "answerIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Stakeholder mapping is a tool used to:",
+            "options": [
+              "Implement strategies towards a stakeholder.",
+              "Position and categorize stakeholders relative to each other."
+            ],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "A stakeholder’s requirement towards the final product or service is:",
+            "options": ["A vague characteristic.", "Specific and tangible."],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "A stakeholder’s expectation towards the final product or service is:",
+            "options": ["A wanted characteristic.", "Specific and tangible."],
+            "answerIndex": 0,
+            "explanation": ""
+          }
+        ]
+      }
     },
     {
       "name": "Chapter 4",
