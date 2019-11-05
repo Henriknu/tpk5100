@@ -84,24 +84,55 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
-     <div class="button-div">
-      <button  type="button" class="btn btn-dark btn-lg test-button">Test terms</button>
-      <button  type="button" class="btn btn-dark btn-lg test-button">Test summary</button>
+    <div class="button-div">
+      <button
+        @click="startTermsQuiz"
+        type="button"
+        class="btn btn-dark btn-lg test-button"
+      >
+        Test terms
+      </button>
+      <button
+        @click="startSummaryQuiz"
+        type="button"
+        class="btn btn-dark btn-lg test-button"
+      >
+        Test summary
+      </button>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import shuffleArray from "../../service/shuffle-service";
+import { Quiz } from "../../types/storeTypes";
 export default Vue.extend({
   computed: {
     isMobile(): boolean {
       return this.$store.state.isMobile;
     },
+    limit(): number {
+      return this.$store.state.limit;
+    },
   },
   methods: {
     goBack(): void {
       this.$router.push("/learnMore");
+    },
+    startTermsQuiz(): void {
+      const questions = this.$store.getters.getTermsQuestions(2);
+      shuffleArray(questions);
+      const quiz = new Quiz(questions, this.limit, false, 2);
+      this.$store.commit("setQuiz", quiz);
+      this.$router.push("/quizInstance");
+    },
+    startSummaryQuiz(): void {
+      const questions = this.$store.getters.getSummaryQuestions(2);
+      shuffleArray(questions);
+      const quiz = new Quiz(questions, this.limit, false, 2);
+      this.$store.commit("setQuiz", quiz);
+      this.$router.push("/quizInstance");
     },
   },
 });

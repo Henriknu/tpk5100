@@ -346,19 +346,208 @@
       "summary": {
         "questions": [
           {
-            "question": "A project that satisfy time and cost objectives but fails to create value:",
+            "question": "Which of the following events occur before the initiation phase?",
             "options": [
-              "Project management success",
-              "Project management success, but project failure",
-              "Failure in terms of both project management and project",
-              "Success on all levels"
+              "Project execution",
+              "Stimuli",
+              "Planning",
+              "Conceptualization"
             ],
             "answerIndex": 1,
-            "explanation": "As project management success is about the project’s ability to satisfy the contextual and project constraints it will be considered a success if the time and cost objectives are withheld. Project success is about the project’s ability to create value and thereby it would be considered a failure if this was not achieved."
+            "explanation": "The stimuli is the trigger factor that initiates the project and initiation phase is phase 1."
+          },
+          {
+            "question": "Which one of the following allegations is NOT true?",
+            "options": [
+              "The initiation phase is the first phase in the project lifecycle",
+              "The greatest opportunity to influence the project is in the initiation phase",
+              "The mandate is the basis for governance and control throughout the project’s lifetime",
+              "Flexibility to solve occurring problems is key in the initiation phase"
+            ],
+            "answerIndex": 3,
+            "explanation": "Flexibility and trust is far more crucial in the execution phase, as the initiation phase primarily deals with clarification and planning."
+          },
+          {
+            "question": "Analyzing a competitor with similar products to decide on a M&A” is an example of a project …:",
+            "options": ["Rationale", "Stimuli", "Purpose", "Mandate"],
+            "answerIndex": 0,
+            "explanation": "The rationale is a justification that explains why the project is needed."
+          },
+          {
+            "question": "Which of the following events occur before the initiation phase?",
+            "options": [
+              "Project execution",
+              "Stimuli",
+              "Planning",
+              "Conceptualization"
+            ],
+            "answerIndex": 1,
+            "explanation": "The stimuli is the trigger factor that initiates the project and initiation phase is phase 1."
+          },
+          {
+            "question": "The project mandate …:",
+            "options": [
+              "Forms the basis for management and control",
+              "Specifies how far the client is willing to go in order to complete the project",
+              "Is made to create a common understanding of the goals, and uncover ambiguities to avoid misunderstandings",
+              "All of the above"
+            ],
+            "answerIndex": 3,
+            "explanation": "The mandate is document describing the scope of the project."
+          },
+          {
+            "question": "Which of the following is NOT a rationale category? :",
+            "options": [
+              "A preventative move to avoid future problems",
+              "Seize the opportunity in new technology or new markets",
+              "Utilize available financial resources",
+              "Solve an existing problem"
+            ],
+            "answerIndex": 2,
+            "explanation": "The rationale would be to reach a business goal or a strategy goal, since the rationale explains why the project is required in the particular area. Available resources only facilitate for this."
+          },
+          {
+            "question": "Ambiguity ...:",
+            "options": [
+              "Does not impact our understating of the problem",
+              "Is the same as uncertainty",
+              "Is meant to be reduced by the project mandate",
+              "All of the above"
+            ],
+            "answerIndex": 2,
+            "explanation": "The project mandate should clarify any confusion in order to create a common understanding of the problem, but the uncertainty is out of the hands of an individual."
+          },
+          {
+            "question": "Which of the following describe BEST the purpose of the initiation/conceptual phase :",
+            "options": [
+              "To define the constraints",
+              "To define the stakeholders",
+              "To define the business objectives",
+              "To align project stakeholders to achieve project goals"
+            ],
+            "answerIndex": 3,
+            "explanation": "The overall purpose of stakeholder management is to create value through achievement of the project goal."
+          },
+          {
+            "question": "John F. Kennedy: Landing a man on the moon and returning him safely to the earth is:",
+            "options": [
+              "The purpose of the Apollo Program",
+              "One of the project objectives of the Apollo Program",
+              "A risk factor for the Apollo Program",
+              "The trigger factor for the Apollo Program"
+            ],
+            "answerIndex": 0,
+            "explanation": "The overall purpose of the project was for mankind to have been on the moon"
+          },
+          {
+            "question": "The outcome describes …:",
+            "options": [
+              "The product produced by the project",
+              "The need that triggered project launch",
+              "The intended beneficial gains of the project",
+              "The purpose"
+            ],
+            "answerIndex": 2,
+            "explanation": "The outcome/objectives are the benefits that potentially can be realized, whereas the actual product/solution etc. produced in the project is called the output."
+          },
+          {
+            "question": "The statement “Develop and implement a training program for employees” describes:",
+            "options": [
+              "The outcome",
+              "The output",
+              "The purpose",
+              "The rationale"
+            ],
+            "answerIndex": 1,
+            "explanation": "This is the product, a deliverable."
+          },
+          {
+            "question": "The statement “The average waiting time from pre-operative clinic until surgery should not exceed 3 months” describes:",
+            "options": [
+              "The outcome",
+              "The output",
+              "The purpose",
+              "The rationale"
+            ],
+            "answerIndex": 0,
+            "explanation": "This is an objective; something they wish to achieve."
+          },
+          {
+            "question": "The statement “To streamline and optimize routines for patients” describes:",
+            "options": [
+              "The outcome",
+              "The output",
+              "The purpose",
+              "The rationale"
+            ],
+            "answerIndex": 2,
+            "explanation": "The purpose of optimization for better and more effective patient care is the higher goal for the project."
           }
         ]
       },
-      "terms": { "questions": [] }
+      "terms": {
+        "questions": [
+          {
+            "question": "“A desired future state” describes the …:",
+            "options": ["Trigger factor", "Purpose", "Output", "Rationale"],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "“A factual description of the starting point” describes the …:",
+            "options": ["Trigger factor", "Purpose", "Output", "Rationale"],
+            "answerIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "“Intended benefits that could be realized when a project fulfills its purpose” is …:",
+            "options": ["Outcome", "Output", "Rationale", "Stimuli"],
+            "answerIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Which of the following is NOT a tangible description of what the project should result in?",
+            "options": ["Deliverables", "End goals", "Outcome", "Output"],
+            "answerIndex": 2,
+            "explanation": ""
+          },
+          {
+            "question": "“A desired future state” describes the …:",
+            "options": ["Trigger factor", "Purpose", "Output", "Rationale"],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "Working-processes, models, concepts are examples of:",
+            "options": [
+              "Outcomes",
+              "Conceptual deliveries",
+              "Tangible deliveries",
+              "Rationale"
+            ],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "… is a document describing the scope of the project:",
+            "options": ["Rationale", "Mandate", "Concept", "Deliverable"],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "“A desired future state” describes the …:",
+            "options": ["Trigger factor", "Purpose", "Output", "Rationale"],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "“An explanation of the reason the project is required in the particular area” describes the …:",
+            "options": ["Objective", "Purpose", "Mandate", "Rationale"],
+            "answerIndex": 3,
+            "explanation": ""
+          }
+        ]
+      }
     },
     {
       "name": "Project Success",
