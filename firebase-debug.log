@@ -1,0 +1,17 @@
+[debug] [2019-11-05T17:10:00.085Z] ----------------------------------------------------------------------
+[debug] [2019-11-05T17:10:00.088Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Henrik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-11-05T17:10:00.088Z] CLI Version:   7.3.2
+[debug] [2019-11-05T17:10:00.088Z] Platform:      win32
+[debug] [2019-11-05T17:10:00.088Z] Node Version:  v10.16.3
+[debug] [2019-11-05T17:10:00.090Z] Time:          Tue Nov 05 2019 18:10:00 GMT+0100 (GMT+01:00)
+[debug] [2019-11-05T17:10:00.090Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-11-05T17:10:00.115Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-05T17:10:00.116Z] > authorizing via signed-in user
+[debug] [2019-11-05T17:10:00.116Z] [iam] checking project projectify-a4da5 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-11-05T17:10:00.118Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-11-05T17:10:00.119Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-11-05T17:10:00.302Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-05T17:10:00.309Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/projectify-a4da5:testIamPermissions  
+

@@ -693,9 +693,9 @@
           {
             "question": "Project success is about:",
             "options": [
-              "how certain stakeholders perceive project implementation phase.",
-              "the ability of the project to create value",
-              "satisfying various project and contextual constraints"
+              "How certain stakeholders perceive project implementation phase.",
+              "The ability of the project to create value",
+              "Satisfying various project and contextual constraints"
             ],
             "answerIndex": 1,
             "explanation": ""
@@ -703,9 +703,9 @@
           {
             "question": "Process success is about:",
             "options": [
-              "how certain stakeholders perceive project implementation phase.",
-              "the ability of the project to create value.",
-              "satisfying various project and contextual constraints."
+              "How certain stakeholders perceive project implementation phase.",
+              "The ability of the project to create value.",
+              "Satisfying various project and contextual constraints."
             ],
             "answerIndex": 0,
             "explanation": ""
@@ -713,9 +713,9 @@
           {
             "question": "Project management success is about:",
             "options": [
-              "how certain stakeholders perceive project implementation phase.",
-              "the ability of the project to create value",
-              "satisfying various project and contextual constraints"
+              "How certain stakeholders perceive project implementation phase.",
+              "The ability of the project to create value",
+              "Satisfying various project and contextual constraints"
             ],
             "answerIndex": 2,
             "explanation": ""
@@ -798,7 +798,7 @@
           {
             "question": "End-user/stakeholders’ involvement is a critical success factor in a project that:",
             "options": [
-              "Is organisationally complex",
+              "Is organizationally complex",
               "Has high level of intended transformation",
               "Has many constraints",
               "Has high level of uncertainty"
@@ -957,8 +957,8 @@
           {
             "question": "Normative conformity is:",
             "options": [
-              "a cognitive bias that causes us to attribute too much weight to past events and translate them into future expectations",
-              "a change in behavior or belief as a result one’s desire to fulfill others’ expectations and gain acceptance"
+              "A cognitive bias that causes us to attribute too much weight to past events and translate them into future expectations",
+              "A change in behavior or belief as a result one’s desire to fulfill others’ expectations and gain acceptance"
             ],
             "answerIndex": 1,
             "explanation": ""
@@ -966,8 +966,8 @@
           {
             "question": "The focusing effect is:",
             "options": [
-              "a behavioral bias that occurs when human decision-making process attempt to satisfice",
-              "a cognitive bias that causes us to attribute too much weight to past events and translate them into future expectations."
+              "A behavioral bias that occurs when human decision-making process attempt to satisfice",
+              "A cognitive bias that causes us to attribute too much weight to past events and translate them into future expectations."
             ],
             "answerIndex": 1,
             "explanation": ""
@@ -975,8 +975,8 @@
           {
             "question": "Bounded rationality is:",
             "options": [
-              "a behavioral bias that occurs when human decision-making process attempt to satisfice",
-              "a cognitive bias that causes us to attribute too much weight to past events and translate them into future expectations."
+              "A behavioral bias that occurs when human decision-making process attempt to satisfice",
+              "A cognitive bias that causes us to attribute too much weight to past events and translate them into future expectations."
             ],
             "answerIndex": 0,
             "explanation": ""
@@ -1175,7 +1175,7 @@
             "question": "Risk management refers to:",
             "options": [
               "Risk identifying",
-              "Risk analysing",
+              "Risk analyzing",
               "Risk management",
               "All of the above"
             ],
