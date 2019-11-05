@@ -1,14 +1,14 @@
 <template>
   <div class="col">
+    <div class="button-div">
+      <button
+        type="button"
+        class="btn btn-dark btn-md"
+        @click="multiToggle"
+        :class="[{ disabled: startedQuiz }]"
+      >{{multiSelect ? 'Unselect all categories' : 'Select all categories'}}</button>
+    </div>
     <div class="list--div">
-      <div class="button-div">
-        <button
-          type="button"
-          class="btn btn-dark btn-md"
-          @click="multiToggle"
-          :class="[{ disabled: startedQuiz }]"
-        >{{multiSelect ? 'Unselect all categories' : 'Select all categories'}}</button>
-      </div>
       <ul class="custom--ul list-group">
         <a
           v-for="cat in categories"
@@ -60,6 +60,15 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
     toggle(category: Category): void {
       if (this.$store.state.quiz == null) {
         this.updateChosenCategories(category);
+        if (this.chosenCategories.length === 0 && this.multiSelect === true) {
+          this.$store.commit("setMultiSelect", !this.multiSelect);
+        } else if (
+          this.chosenCategories.length ===
+            this.$store.state.categories.length &&
+          this.multiSelect === false
+        ) {
+          this.$store.commit("setMultiSelect", !this.multiSelect);
+        }
       }
     },
     multiToggle(): void {
