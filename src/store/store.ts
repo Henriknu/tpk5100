@@ -123,11 +123,9 @@ const store: StoreOptions<RootState> = {
       state.chosenCategories = newChosenCategories;
     },
     removeQuestion: (state, question: Question): void => {
-      console.log(state.quiz!.questions);
       state.quiz!.questions = state.quiz!.questions.filter(
         q => q.question !== question.question
       );
-      console.log(state.quiz!.questions);
     },
     setIsMobile: (state, isMobile: boolean): void => {
       state.isMobile = isMobile;

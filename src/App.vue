@@ -1,10 +1,7 @@
 /* eslint-disable @typescript-eslint/unbound-method */
 <template>
   <v-app>
-    <nav
-      v-if="!isMobile"
-      class="navbar custom-container navbar-expand-sm navbar-light bg-light"
-    >
+    <nav v-if="!isMobile" class="navbar custom-container navbar-expand-sm navbar-light bg-light">
       <a @click="goToPage('/')" class="navbar-brand mb-0 h1">Projectify</a>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -12,32 +9,28 @@
             :class="{ active: this.$router.currentRoute.name === 'home' }"
             @click="goToPage('/')"
             class="nav-link"
-            >Home</a
-          >
+          >Home</a>
         </li>
         <li class="nav-item">
           <a
             :class="{ active: this.$router.currentRoute.name === 'learnMore' }"
             @click="goToPage('/learnMore')"
             class="nav-link"
-            >Learn more</a
-          >
+          >Learn more</a>
         </li>
         <li class="nav-item">
           <a
             :class="{ active: this.$router.currentRoute.name === 'quiz' }"
             @click="goToPage('/quiz')"
             class="nav-link"
-            >Quiz</a
-          >
+          >Quiz</a>
         </li>
         <li class="nav-item">
           <a
             :class="{ active: this.$router.currentRoute.name === 'stats' }"
             @click="goToPage('/stats')"
             class="nav-link"
-            >Stats</a
-          >
+          >Stats</a>
         </li>
       </ul>
       <ul class="navbar-nav">
@@ -46,8 +39,7 @@
             :class="{ active: this.$router.currentRoute.name === 'settings' }"
             @click="goToPage('/settings')"
             class="nav-link"
-            >Settings</a
-          >
+          >Settings</a>
         </li>
       </ul>
     </nav>
@@ -104,7 +96,6 @@ export default Vue.extend({
   },
 
   created() {
-    console.log("Initating categories");
     this.$store.dispatch("initiateCategories");
   },
 
