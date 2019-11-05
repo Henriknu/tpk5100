@@ -1,11 +1,10 @@
 <template>
   <div class="container">
     <div class="header--div">
-      <a v-if="isMobile" @click="goBack">
+      <a @click="goBack">
         <img src="../../../public/img/icons8-go-back-96.png" alt="Go back" />
       </a>
-      <span v-else></span>
-      <h3>2 - Project characteristics</h3>
+      <h3>2. Project characteristics</h3>
       <span></span>
     </div>
     <v-expansion-panels>
@@ -15,7 +14,21 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <b>XXXXXXXXXXXXXXXXXXXXXXXXXXXXX</b>
+            <b>Project characteristic</b>
+            <p>
+              Project characteristics is what separates a project from a regular
+              operational activity.
+            </p>
+            <p>The most common project characterstics are:</p>
+            <ul>
+              <li>Organizational complexity</li>
+              <li>Projects contribute to transformation</li>
+              <li>Projects have impact on business or strategy</li>
+              <li>
+                Projects are executed under one or more types of constraints
+              </li>
+              <li>Uncertainty</li>
+            </ul>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -25,7 +38,16 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <p>Some projects are more structurally complex than others. A project’s organizational complexity is dependent on the number of individuals working on the project and the mixture of departments, geographical locations and respective work fields among them. It is also affected by the number of different stakeholders as well as whether the project workers are from inside the organization or hired externally and whether the project is delivered in one big or several smaller packages.</p>
+            <p>
+              Some projects are more structurally complex than others. A
+              project’s organizational complexity is dependent on the number of
+              individuals working on the project and the mixture of departments,
+              geographical locations and respective work fields among them. It
+              is also affected by the number of different stakeholders as well
+              as whether the project workers are from inside the organization or
+              hired externally and whether the project is delivered in one big
+              or several smaller packages.
+            </p>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -35,7 +57,11 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <p>Projects are tools for transformation. The transformation can be finding new, more effective ways to do a task, slightly changing a product or service, or inventing something brand new.</p>
+            <p>
+              Projects are tools for transformation. The transformation can be
+              finding new, more effective ways to do a task, slightly changing a
+              product or service, or inventing something brand new.
+            </p>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -45,7 +71,14 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <p>Projects impact the business objectives and strategy. It is therefore important that the objectives of the project are aligned with those of the company. Projects are initiated to create benefit for the project owner, and the distribution of resources to a company’s projects will be decided by the size of this benefit.</p>
+            <p>
+              Projects impact the business objectives and strategy. It is
+              therefore important that the objectives of the project are aligned
+              with those of the company. Projects are initiated to create
+              benefit for the project owner, and the distribution of resources
+              to a company’s projects will be decided by the size of this
+              benefit.
+            </p>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -55,7 +88,11 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <p>Projects have certain limitations that can’t be exceeded for the benefits to be fully realized. These can for example be limitations for time or resources spent.</p>
+            <p>
+              Projects have certain limitations that can’t be exceeded for the
+              benefits to be fully realized. These can for example be
+              limitations for time or resources spent.
+            </p>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -65,7 +102,13 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <p>Knowing the likelihood and consequences of the risk identified, the risk response planning process involves recognizing the necessary measures to manage the risks. The measures should fit the project characteristics, the risk situation and the risk implications for the project objective.</p>
+            <p>
+              Knowing the likelihood and consequences of the risk identified,
+              the risk response planning process involves recognizing the
+              necessary measures to manage the risks. The measures should fit
+              the project characteristics, the risk situation and the risk
+              implications for the project objective.
+            </p>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -75,7 +118,13 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <p>Every project has an associated uncertainty. The degree uncertainty is proportional with the degree of innovation required to finish the project. It is difficult to predict the development of and possible incidents influencing the project if the uncertainty is high.</p>
+            <p>
+              Every project has an associated uncertainty. The degree
+              uncertainty is proportional with the degree of innovation required
+              to finish the project. It is difficult to predict the development
+              of and possible incidents influencing the project if the
+              uncertainty is high.
+            </p>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -85,12 +134,16 @@
         @click="startTermsQuiz"
         type="button"
         class="btn btn-dark btn-lg test-button"
-      >Test terms</button>
+      >
+        Test terms
+      </button>
       <button
         @click="startSummaryQuiz"
         type="button"
         class="btn btn-dark btn-lg test-button"
-      >Test summary</button>
+      >
+        Test summary
+      </button>
     </div>
   </div>
 </template>
@@ -142,8 +195,10 @@ img {
   justify-content: space-between;
   padding-bottom: 30px;
 }
-h1 {
-  padding-right: 35px;
+h3 {
+  padding-right: 45px;
+  padding-left: 10px;
+  text-align: center;
 }
 a {
   padding-top: 8px;

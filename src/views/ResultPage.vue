@@ -1,7 +1,10 @@
 <template>
   <div class="container">
     <div class="header--div">
-      <a v-if="isMobile" @click="redirectToQuiz ? goToQuiz : goToChapter(chapterNumber)">
+      <a
+        v-if="isMobile"
+        @click="redirectToQuiz ? goToQuiz : goToChapter(chapterNumber)"
+      >
         <img src="../../public/img/icons8-go-back-96.png" alt="Go back" />
       </a>
       <span v-else></span>
@@ -28,6 +31,14 @@ export default Vue.extend({
       chapterNumber: 0,
     };
   },
+  computed: {
+    precentage(): number {
+      return this.$data.correctQuestions / this.$data.initialLength;
+    },
+    isMobile(): boolean {
+      return this.$store.state.isMobile;
+    },
+  },
   created() {
     this.correctQuestions = this.$store.state.quiz!.correctQuestionsCounter;
     this.initialLength = this.$store.state.quiz!.initialLength;
@@ -36,14 +47,6 @@ export default Vue.extend({
       this.chapterNumber = this.$store.state.quiz!.chapterNumber;
 
     this.$store.dispatch("onQuizCompleted");
-  },
-  computed: {
-    precentage(): number {
-      return this.$data.correctQuestions / this.$data.initialLength;
-    },
-    isMobile(): boolean {
-      return this.$store.state.isMobile;
-    },
   },
   methods: {
     goToQuiz(): void {

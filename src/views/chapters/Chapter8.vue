@@ -1,11 +1,10 @@
 <template>
   <div class="container">
     <div class="header--div">
-      <a v-if="isMobile" @click="goBack">
+      <a @click="goBack">
         <img src="../../../public/img/icons8-go-back-96.png" alt="Go back" />
       </a>
-      <span v-else></span>
-      <h1>Chapter 8</h1>
+      <h3>8. Project Organization</h3>
       <span></span>
     </div>
     <v-expansion-panels>
@@ -16,14 +15,26 @@
         <v-expansion-panel-content>
           <div>
             <b>Silo-thinking</b>
-            <p>Failure to understand the impact of the project on the whole organization (see and prioritize only its own needs).</p>
+            <p>
+              Failure to understand the impact of the project on the whole
+              organization (see and prioritize only its own needs).
+            </p>
 
             <b>Functional structure</b>
-            <p>An organization structure where people work in different departments based on professional specialities.</p>
+            <p>
+              An organization structure where people work in different
+              departments based on professional specialities.
+            </p>
             <b>Project structure</b>
-            <p>An organizational structure where people are grouped together based on the project they are working on.</p>
+            <p>
+              An organizational structure where people are grouped together
+              based on the project they are working on.
+            </p>
             <b>Matrix structure</b>
-            <p>A combination of functional and project structure, where employees work within their department and projects at the same time.</p>
+            <p>
+              A combination of functional and project structure, where employees
+              work within their department and projects at the same time.
+            </p>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -33,7 +44,14 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <p>Organizations may be structured numerous ways dependent on available resources and the culture in the organization. Keywords when distinguishing the different structures are authority and coordination. From a project perspective, we choose to distinguish between three different organizational structures: Functional, Project and Matrix.</p>
+            <p>
+              Organizations may be structured numerous ways dependent on
+              available resources and the culture in the organization. Keywords
+              when distinguishing the different structures are authority and
+              coordination. From a project perspective, we choose to distinguish
+              between three different organizational structures: Functional,
+              Project and Matrix.
+            </p>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -43,7 +61,14 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <p>Within a functional structure, people work in different departments based on professional specialities. The project is defined as business as usual; each department executes their project related tasks almost independently of the other departments. Department managers have the authority and all communication between the departments is done through them.</p>
+            <p>
+              Within a functional structure, people work in different
+              departments based on professional specialities. The project is
+              defined as business as usual; each department executes their
+              project related tasks almost independently of the other
+              departments. Department managers have the authority and all
+              communication between the departments is done through them.
+            </p>
             <p>Pros:</p>
             <ul>
               <li>Vertical communication</li>
@@ -65,7 +90,15 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <p>Within a project structure, Project managers have a high level of authority to manage and control resources needed for the project, as long as they are available from the parent organization. In this structure employees are assigned to projects by project managers and all forms of communication and coordination is done within the project team. Project task has none or almost no connection to regular department tasks.</p>
+            <p>
+              Within a project structure, Project managers have a high level of
+              authority to manage and control resources needed for the project,
+              as long as they are available from the parent organization. In
+              this structure employees are assigned to projects by project
+              managers and all forms of communication and coordination is done
+              within the project team. Project task has none or almost no
+              connection to regular department tasks.
+            </p>
             <p>Pros:</p>
             <ul>
               <li>Project manager has complete control</li>
@@ -74,7 +107,10 @@
             </ul>
             <p>Cons:</p>
             <ul>
-              <li>Not ideal transfer of knowledge and skills development between projects</li>
+              <li>
+                Not ideal transfer of knowledge and skills development between
+                projects
+              </li>
               <li>Employees may become less loyal to the parent organization.</li>
               <li>Members may be fired or quit after project</li>
             </ul>
@@ -92,7 +128,15 @@
               alt="Matrix structure"
               class="chapter-img"
             />
-            <p>Within a matrix structure, employees work with several activities, either on projects or in their department based on demand. This is a form of mixture between functional and project structure. A significant feature is that projects are run by resources form different departments and coordination happens and project level. Matrix structure may be divided into weak, balanced and strong, whereas the difference is the authority of the line leaders.</p>
+            <p>
+              Within a matrix structure, employees work with several activities,
+              either on projects or in their department based on demand. This is
+              a form of mixture between functional and project structure. A
+              significant feature is that projects are run by resources form
+              different departments and coordination happens and project level.
+              Matrix structure may be divided into weak, balanced and strong,
+              whereas the difference is the authority of the line leaders.
+            </p>
             <p>Pros:</p>
             <ul>
               <li>Suited to dynamic environments</li>
@@ -172,8 +216,10 @@ img {
   justify-content: space-between;
   padding-bottom: 30px;
 }
-h1 {
-  padding-right: 35px;
+h3 {
+  padding-right: 45px;
+  padding-left: 10px;
+  text-align: center;
 }
 a {
   padding-top: 8px;

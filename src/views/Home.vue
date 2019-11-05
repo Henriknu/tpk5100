@@ -1,12 +1,16 @@
 <template>
   <div class="container">
     <Nav header-text="Projectify"></Nav>
-    <p>This is an educational app made for the NTNU course TPK5100, by group 19.</p>
     <p>
-      <b>Learn more</b> about project management and test yourself in the subject
+      This is an educational app made for the NTNU course TPK5100, by group 19.
     </p>
     <p>
-      <b>Quiz</b> allows you to test yourself in multiple chapters at the same time.
+      <b>Learn more</b> about project management and test yourself in the
+      subject
+    </p>
+    <p>
+      <b>Quiz</b> allows you to test yourself in multiple chapters at the same
+      time.
     </p>
     <p>
       Track your

@@ -1,11 +1,10 @@
 <template>
   <div class="container">
     <div class="header--div">
-      <a v-if="isMobile" @click="goBack">
+      <a @click="goBack">
         <img src="../../../public/img/icons8-go-back-96.png" alt="Go back" />
       </a>
-      <span v-else></span>
-      <h1>Chapter 3</h1>
+      <h3>3. Stakeholders</h3>
       <span></span>
     </div>
     <v-expansion-panels>
@@ -15,7 +14,14 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <b>XXXXXXXXXXXXXXXXXXXXXXXXXXXXX</b>
+            <b>Stakeholder</b>
+            <p>A stakeholder is an individual or a group affected by or able to influence the project.</p>
+            <b>Stakeholder mapping</b>
+            <p>Stakeholder mapping is a tool used to position and categorize stakeholders relative to each other.</p>
+            <b>Requirement</b>
+            <p>A stakeholder’s requirement is something specific and tangible the stakeholder require from the product or service.</p>
+            <b>Expectation</b>
+            <p>A stakeholder’s expectations are characteristics that the stakeholder expect the final product or service to involve.</p>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -25,11 +31,18 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <p>The involvement of key stakeholders is crucial for a project’s success, and this makes stakeholder management important. Stakeholder management consists of three steps:</p>
+            <p>
+              The involvement of key stakeholders is crucial for a project’s
+              success, and this makes stakeholder management important.
+              Stakeholder management consists of three steps:
+            </p>
             <ul>
               <li>Identification of stakeholders.</li>
               <li>Analysis of stakeholders and their relationship to the project.</li>
-              <li>Implementation of strategies for communicating with each stakeholder based on the information from the above steps.</li>
+              <li>
+                Implementation of strategies for communicating with each
+                stakeholder based on the information from the above steps.
+              </li>
             </ul>
           </div>
         </v-expansion-panel-content>
@@ -40,22 +53,34 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
-            <p>A popular method used to position stakeholders relative to each other. The most common way is to create an influence-interest matrix and position and group the stakeholders according to their influence over and interest in the project. The stakeholders are divided into four groups:</p>
+            <p>
+              A popular method used to position stakeholders relative to each
+              other. The most common way is to create an influence-interest
+              matrix and position and group the stakeholders according to their
+              influence over and interest in the project. The stakeholders are
+              divided into four groups:
+            </p>
             <p>
               <b>High influence – high interest</b>.
-              <br />Key stakeholders. Close collaboration, involvement and monitoring.
+              <br />Key stakeholders.
+              Close collaboration, involvement and monitoring.
             </p>
             <p>
               <b>High influence – low interest</b>.
-              <br />Prioritized group. Keep satisfied as their support might be important for the project at a later point.
+              <br />Prioritized group.
+              Keep satisfied as their support might be important for the project
+              at a later point.
             </p>
             <p>
               <b>Low influence – high interest</b>.
-              <br />Prioritized group. Keep informed and make sure that their interests are fulfilled to a certain degree.
+              <br />Prioritized group.
+              Keep informed and make sure that their interests are fulfilled to
+              a certain degree.
             </p>
             <p>
               <b>Low influence – low interest</b>.
-              <br />Marginal effort. Monitor in case stakeholder(s) move to a different group.
+              <br />Marginal effort.
+              Monitor in case stakeholder(s) move to a different group.
             </p>
           </div>
         </v-expansion-panel-content>
@@ -123,8 +148,10 @@ img {
   justify-content: space-between;
   padding-bottom: 30px;
 }
-h1 {
-  padding-right: 35px;
+h3 {
+  padding-right: 45px;
+  padding-left: 10px;
+  text-align: center;
 }
 a {
   padding-top: 8px;

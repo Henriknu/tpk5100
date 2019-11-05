@@ -30,7 +30,9 @@
       </table>
     </div>
     <div class="button-div">
-      <button type="button" class="btn btn-dark btn-lg" @click="doReset">Reset stats</button>
+      <button @click="doReset" type="button" class="btn btn-dark btn-lg">
+        Reset stats
+      </button>
     </div>
   </div>
 </template>

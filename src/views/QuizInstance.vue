@@ -25,7 +25,8 @@
           @click="select(option)"
           role="button"
           class="list-group-item list-group-item-action"
-        >{{ index + 1 }} : {{ option }}</a>
+          >{{ index + 1 }} : {{ option }}</a
+        >
       </ul>
     </div>
     <br />
@@ -42,14 +43,18 @@
         @click="verify"
         type="button"
         class="btn btn-dark btn-lg"
-      >Verify</button>
+      >
+        Verify
+      </button>
 
       <button
         :class="[{ disabled: !answered }]"
         @click="nextQuestion"
         type="button"
         class="btn btn-dark btn-lg"
-      >Next</button>
+      >
+        Next
+      </button>
     </div>
   </div>
 </template>

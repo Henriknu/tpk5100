@@ -60,10 +60,22 @@
           }
         ]
       },
-      "terms": { "questions": [] }
+      "terms": {
+        "questions": [
+          {
+            "question": "A Project characteristic is:",
+            "options": [
+              "What separates a project from a regular operational activity.",
+              "What separates one project from another."
+            ],
+            "answerIndex": 0,
+            "explanation": "See Page 27"
+          }
+        ]
+      }
     },
     {
-      "name": "Chapter 3",
+      "name": "Stakeholders",
       "summary": {
         "questions": [
           {
@@ -165,13 +177,187 @@
       }
     },
     {
-      "name": "Chapter 4",
-      "summary": { "questions": [] },
-      "terms": { "questions": [] }
+      "name": "Project Lifecycle",
+      "summary": {
+        "questions": [
+          {
+            "question": "“A visualization of the most important tasks and processes required to reach the project’s goal” describes:",
+            "options": [
+              "The project lifecycle",
+              "The mandate",
+              "An evaluation model",
+              "Stakeholder mapping"
+            ],
+            "answerIndex": 0,
+            "explanation": "The project lifecycle is visualized as work packages places in sequence along a time line to respond to the trigger factor"
+          },
+          {
+            "question": "What is NOT one of the purposes of defining a project lifecycle:",
+            "options": [
+              "Group tasks",
+              "Describing the required tasks for the project's execution",
+              "Fixing possible occasions to terminate the project",
+              "Defining the project purpose together with the client"
+            ],
+            "answerIndex": 3,
+            "explanation": "The client defines the project purpose!"
+          },
+          {
+            "question": "How does the Project Manager facilitate for realization of the project's desired effects?",
+            "options": [
+              "It is not possible due to contextual uncertainty beyond the control of individuals",
+              "Good project management and good follow-up",
+              "Give all the various stakeholders equal attention",
+              "Focus solely on maximization of the positive effects"
+            ],
+            "answerIndex": 1,
+            "explanation": "The project manager should facilitate to the best of their ability for the purpose to be realized, which is done through good project management and good follow-up."
+          },
+          {
+            "question": "Risk and opportunity:",
+            "options": [
+              "Both increase throughout the project life cycle",
+              "Vary inversely throughout the project life cycle",
+              "Both decrease throughout the project life cycle",
+              "Do not vary throughout the project life cycle"
+            ],
+            "answerIndex": 2,
+            "explanation": "As time passes and more specifications are made and uncertainty is eliminated, the possibility for big changes are reduced, reducing both risk and opportunity."
+          },
+          {
+            "question": "The statement “Identification of rationale, outcome and purpose is done in the planning phase” is …:",
+            "options": [
+              "True",
+              "Depends on the context",
+              "Depends on the project",
+              "False"
+            ],
+            "answerIndex": 3,
+            "explanation": "This is done in the initiation phase!"
+          },
+          {
+            "question": "In plan driven projects, the client interest is highest at …:",
+            "options": [
+              "Initiation and close out phase",
+              "Initiation and planning phase",
+              "Planning and execution phase",
+              "All phases"
+            ],
+            "answerIndex": 1,
+            "explanation": "The client presents their wishes initially, but it usually does not matter to them how the project is carried out (planning and execution), as long as it is delivered according to the specifications in the close-out phase."
+          },
+          {
+            "question": "Which statement describes the role of the project owner?",
+            "options": [
+              "Defines the problem and purpose to which the project should respond",
+              "Initiates the project",
+              "Defines the intended outcome of the project",
+              "All of the above"
+            ],
+            "answerIndex": 3,
+            "explanation": "The project owner is the client and the project should respond to the client’s wishes!"
+          },
+          {
+            "question": "Which role is the task of ambition adjustment related to?",
+            "options": [
+              "The owner",
+              "Internal end-user",
+              "External end-user",
+              "Project manager"
+            ],
+            "answerIndex": 0,
+            "explanation": "The project owner is the client, thus has the power to choose the goals. Therefore it is also the owner who must adjust them."
+          }
+        ]
+      },
+      "terms": {
+        "questions": [
+          {
+            "question": "The project lifecycle is defined as:",
+            "options": [
+              "A visualization of the resources required and the allocation of these to reach the project’s goal",
+              "A visualization of the most important tasks and processes required to reach the project’s goal",
+              "A visualization of the stakeholders’ interest and influence on the project",
+              "A visualization of the contribution from ongoing projects in a project organization towards the vision"
+            ],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "The project progresses to the next phase…",
+            "options": [
+              "When it’s time according to the schedule",
+              "When the project manager approves",
+              "After passing the evaluation at the decision gate",
+              "When assessment is needed"
+            ],
+            "answerIndex": 2,
+            "explanation": ""
+          },
+          {
+            "question": "Structuring and organizing the practice of projects to adhere to the different stakeholder perspectives” describes …:",
+            "options": [
+              "Project management as a field of study",
+              "Initiation phase",
+              "Decision gates",
+              "A project"
+            ],
+            "answerIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "“Anyone who has to live with the result of the project after implementation” describes:",
+            "options": [
+              "The end-user",
+              "The project manager",
+              "A stakeholder (in general)",
+              "The owner"
+            ],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "Internal end-users …:",
+            "options": [
+              "Are not stakeholders",
+              "Belong to the project organization",
+              "Belong to the owner organization",
+              "Are clients of the owner"
+            ],
+            "answerIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "“A collection of unique processes with the intention of delivering a result within the given constraints” describes …:",
+            "options": [
+              "A deliverable",
+              "The project lifecycle",
+              "The initiation phase",
+              "A project, from the perspective of the project organization"
+            ],
+            "answerIndex": 3,
+            "explanation": ""
+          }
+        ]
+      }
     },
     {
-      "name": "Chapter 5",
-      "summary": { "questions": [] },
+      "name": "Project Initiation",
+      "summary": {
+        "questions": [
+          {
+            "question": "A project that satisfy time and cost objectives but fails to create value:",
+            "options": [
+              "Project management success",
+              "Project management success, but project failure",
+              "Failure in terms of both project management and project",
+              "Success on all levels"
+            ],
+            "answerIndex": 1,
+            "explanation": "As project management success is about the project’s ability to satisfy the contextual and project constraints it will be considered a success if the time and cost objectives are withheld. Project success is about the project’s ability to create value and thereby it would be considered a failure if this was not achieved."
+          }
+        ]
+      },
       "terms": { "questions": [] }
     },
     {
