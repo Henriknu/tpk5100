@@ -44,6 +44,7 @@ export default Vue.extend({
       this.chapterNumber = this.$store.state.quiz!.chapterNumber;
 
     this.$store.dispatch("onQuizCompleted");
+    this.$store.commit("setMultiSelect", false);
   },
   methods: {
     goToQuiz(): void {
