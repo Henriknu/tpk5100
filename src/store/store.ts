@@ -8,6 +8,7 @@ export interface RootState {
   categories: Category[];
   chosenCategories: Category[];
   quiz: Quiz | null;
+  multiSelect: boolean;
   limit: number;
   totalQuizzesCompleted: number;
   totalQuestionsAnswered: number;
@@ -21,6 +22,7 @@ const store: StoreOptions<RootState> = {
     categories: Array<Category>(),
     chosenCategories: Array<Category>(),
     quiz: null,
+    multiSelect: false,
     limit: 10,
     totalQuizzesCompleted: 0,
     totalQuestionsAnswered: 0,
@@ -58,9 +60,6 @@ const store: StoreOptions<RootState> = {
       });
       return questions;
     },
-    getQuizQuestions: (state): Question[] => {
-      return state.quiz!.questions;
-    },
     getQuestion: state => (index: number): Question => {
       return state.quiz!.questions[index];
     },
@@ -77,6 +76,9 @@ const store: StoreOptions<RootState> = {
     },
     setLimit: (state, limit: number): void => {
       state.limit = limit;
+    },
+    setMultiSelect: (state, value: boolean): void => {
+      state.multiSelect = value;
     },
     incrementQuestionCounter: (state): void => {
       state.quiz!.questionCounter += 1;

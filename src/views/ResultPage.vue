@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="header--div">
-      <a v-if="isMobile" @click="redirectToQuiz ? goToQuiz : goToChapter(chapterNumber)">
+      <a v-if="isMobile" @click="redirectToQuiz ? goToQuiz() : goToChapter(chapterNumber)">
         <img src="../../public/img/icons8-go-back-96.png" alt="Go back" />
       </a>
       <span v-else></span>

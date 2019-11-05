@@ -191,16 +191,16 @@ export default Vue.extend({
       this.$router.push("/learnMore");
     },
     startTermsQuiz(): void {
-      const questions = this.$store.getters.getTermsQuestions(2);
+      const questions = this.$store.getters.getTermsQuestions(4);
       shuffleArray(questions);
-      const quiz = new Quiz(questions, this.limit, false, 2);
+      const quiz = new Quiz(questions, this.limit, false, 4);
       this.$store.commit("setQuiz", quiz);
       this.$router.push("/quizInstance");
     },
     startSummaryQuiz(): void {
-      const questions = this.$store.getters.getSummaryQuestions(2);
+      const questions = this.$store.getters.getSummaryQuestions(4);
       shuffleArray(questions);
-      const quiz = new Quiz(questions, this.limit, false, 2);
+      const quiz = new Quiz(questions, this.limit, false, 4);
       this.$store.commit("setQuiz", quiz);
       this.$router.push("/quizInstance");
     },

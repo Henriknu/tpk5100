@@ -1,9 +1,14 @@
 <template>
   <div class="col">
-    <p>
-      Number of topics selected: {{ this.$store.state.chosenCategories.length }}
-    </p>
     <div class="list--div">
+      <div class="button-div">
+        <button
+          type="button"
+          class="btn btn-dark btn-md"
+          @click="multiToggle"
+          :class="[{ disabled: startedQuiz }]"
+        >{{multiSelect ? 'Unselect all categories' : 'Select all categories'}}</button>
+      </div>
       <ul class="custom--ul list-group">
         <a
           v-for="cat in categories"
@@ -16,8 +21,7 @@
           @click="toggle(cat)"
           role="button"
           class="list-group-item list-group-item-action"
-          >{{ cat.name }}</a
-        >
+        >{{ cat.name }}</a>
       </ul>
     </div>
   </div>
@@ -44,12 +48,31 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
     chosenCategories() {
       return this.$store.state.chosenCategories;
     },
+    multiSelect() {
+      return this.$store.state.multiSelect;
+    },
+    startedQuiz(): boolean {
+      return this.$store.state.quiz != null;
+    },
   },
   methods: {
     ...mapMutations(["updateChosenCategories"]),
     toggle(category: Category): void {
       if (this.$store.state.quiz == null) {
         this.updateChosenCategories(category);
+      }
+    },
+    multiToggle(): void {
+      if (!this.startedQuiz) {
+        if (this.multiSelect) {
+          this.$store.commit("setChosenCategories", []);
+        } else {
+          this.$store.commit(
+            "setChosenCategories",
+            this.$store.state.categories
+          );
+        }
+        this.$store.commit("setMultiSelect", !this.multiSelect);
       }
     },
   },
@@ -75,6 +98,15 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
     height: 50vh;
     overflow-y: auto;
   }
+}
+
+.button-div {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 25px;
+  align-items: flex-start;
 }
 
 .list-group-item.active {

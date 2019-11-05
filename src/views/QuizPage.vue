@@ -13,21 +13,15 @@
         @click="startQuiz"
         type="button"
         class="btn btn-dark btn-lg"
-      >
-        Start Quiz
-      </button>
+      >Start Quiz</button>
     </div>
     <div v-else class="button-div">
-      <button @click="continueQuiz" type="button" class="btn btn-dark btn-lg">
-        Continue Quiz
-      </button>
+      <button @click="continueQuiz" type="button" class="btn btn-dark btn-lg">Continue Quiz</button>
       <button
         @click="abondonQuiz"
         type="button"
         class="btn btn-dark btn-lg abandon-quiz--button"
-      >
-        Abandon Quiz
-      </button>
+      >Abandon Quiz</button>
     </div>
   </div>
 </template>
@@ -76,6 +70,7 @@ export default Vue.extend({
     },
     abondonQuiz(): void {
       this.$store.dispatch("onQuizCompleted");
+      this.$store.commit("setMultiSelect", false);
     },
   },
 });
