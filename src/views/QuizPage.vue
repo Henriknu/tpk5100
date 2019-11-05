@@ -21,7 +21,7 @@
         @click="abondonQuiz"
         type="button"
         class="btn btn-dark btn-lg abandon-quiz--button"
-      >Abondon Quiz</button>
+      >Abandon Quiz</button>
     </div>
   </div>
 </template>

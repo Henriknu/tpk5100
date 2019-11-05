@@ -1,14 +1,16 @@
 <template>
   <div class="container">
     <Nav header-text="Projectify"></Nav>
-    <p>This is an educational app made for the NTNU course TPK5100.</p>
+    <p>This is an educational app made for the NTNU course TPK5100, by group 19.</p>
     <p>
-      It allows you to practice your project management knowledge, by doing
-      quizes.
+      <b>Learn more</b> about project management and test yourself in the subject
     </p>
     <p>
-      Choose what topics you want to focus on, and you will get asked 10 random
-      questions related to topics.
+      <b>Quiz</b> allows you to test yourself in multiple chapters at the same time.
+    </p>
+    <p>
+      Track your
+      <b>Stats</b> and compare your progress with your co-students.
     </p>
     <p>Good luck practicing!</p>
   </div>
