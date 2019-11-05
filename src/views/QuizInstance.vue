@@ -142,7 +142,9 @@ button {
 .button-div {
   display: flex;
 }
-a {
-  padding-left: 20px;
+@media only screen and (min-width: 600px) {
+  a {
+    padding-left: 20px;
+  }
 }
 </style>
