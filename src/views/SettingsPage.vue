@@ -10,15 +10,8 @@
           <span></span>
         </div>
         <label>Maximum number of questions asked pr Quiz</label>
-        <v-select
-          :items="items"
-          :placeholder="String(limit)"
-          @change="updateInputLimit"
-          outlined
-        ></v-select>
-        <button @click="saveSettings" type="button" class="btn btn-dark btn-lg">
-          Save Settings
-        </button>
+        <v-select :items="items" :placeholder="String(limit)" @change="updateInputLimit" outlined></v-select>
+        <button @click="saveSettings" type="button" class="btn btn-dark btn-lg">Save Settings</button>
       </div>
     </div>
   </div>
@@ -50,7 +43,6 @@ export default Vue.extend({
     },
     updateInputLimit(value: string): void {
       this.inputLimit = value;
-      console.log(value);
     },
   },
 });
