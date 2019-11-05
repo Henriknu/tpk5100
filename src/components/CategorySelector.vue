@@ -104,7 +104,7 @@ export default (Vue as VueConstructor<Vue & VuexBindings>).extend({
   display: flex;
   flex-direction: row;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   padding-left: 25px;
   align-items: flex-start;
 }
