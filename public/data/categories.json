@@ -1021,6 +1021,34 @@
             "options": ["True", "False"],
             "answerIndex": 1,
             "explanation": "Project success is about the project’s ability to create value. Although it might be wise to identify the success factors, it is not given that this will lead to project success"
+          },
+          {
+            "question": "Project performance can be accurately determined by evaluating the incurred expenses in relation to the budgeted costs.",
+            "options": ["True", "False"],
+            "answerIndex": 1,
+            "explanation": "Incurred expenses compared to the budgeted costs is not an accurate measure of project performance since it does not take the value of the work accomplished into consideration. See page 146."
+          },
+          {
+            "question": "Earned Value refers to",
+            "options": [
+              "The number of work hours",
+              "The incurred expenses",
+              "The value of the accomplished work",
+              "The project total costs"
+            ],
+            "answerIndex": 2,
+            "explanation": "Earned Value refers to the value of the accomplished work in terms of work hours or costs. See definition on page 147."
+          },
+          {
+            "question": "The project S-curve is a graph showing",
+            "options": [
+              "The Cost Performance Index at various times",
+              "Planned Value",
+              "Earned Value",
+              "Option 2 and 3 are correct"
+            ],
+            "answerIndex": 3,
+            "explanation": "The S-curve is a plot of Planned Value, Actual Costs and Earned Value. See page 149."
           }
         ]
       },

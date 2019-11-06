@@ -19,11 +19,47 @@
               How much time an activity time may be increased without affecting
               the project’s end date
             </p>
-
             <b>Critical path</b>
             <p>The path with the longest project duration.</p>
             <b>Work packages</b>
             <p>A mini-project with a defined result.</p>
+            <b>Planned Value (PV)</b>
+            <p>
+              The cumulative time-phased budget in terms of hours or costs at a
+              given status date.
+            </p>
+            <b>Actual Costs (AV)</b>
+            <p>The cumulative incurred expenses or hours at a given status date.</p>
+            <b>Earned Value (EV)</b>
+            <p>
+              The value of the work that has been accomplished by a given status
+              date. The value is based on how much the work is worth in terms of
+              hours or costs.
+            </p>
+            <b>Cost Performance Index (CPI)</b>
+            <p>
+              A measure to express the relation between earned value and actual
+              costs, to indicate the cost performance at a given status date.
+              CPI = EV/AC.
+            </p>
+            <b>Schedule Performance Index (SPI)</b>
+            <p>
+              A measure to express the relation between earned value and planned
+              value, to indicate the current time performance at a given status
+              date. SPI = EV/PV.
+            </p>
+            <b>Estimated Cost at Completion (EAC)</b>
+            <p>
+              A forecast of the total project costs based on the cost
+              performance at a given status date, using planned value and the
+              cost performance index (CPI). EAC = PV/CPI.
+            </p>
+            <b>Time Forecasting (ED)</b>
+            <p>
+              The expected duration of a project based on the schedule
+              performance at a given status date, using planned duration (D) and
+              the schedule performance index (SPI). ED = D/SPI.
+            </p>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -232,6 +268,24 @@
               is that it does not show what the actual costs consists of, only
               the total amount.
             </p>
+          </div>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+      <v-expansion-panel>
+        <v-expansion-panel-header>
+          <h5>Performance assessment</h5>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <div>
+            <p>To assess the performance of a project, it is not enough to only compare the status with the project schedule or the incurred expenses with the budget. One need parameters to evaluate the value of the work that has been accomplished and its relation to the incurred costs.</p>
+            <p>The correct assessment of the project status is comparing the value of the work that has been accomplished with the planned value of the work and the incurred expenses at a given status date. This yields the parameters Earned Value, Planned Value and Actual Costs.</p>
+            <p>Earned value is the value of the work that has been accomplished by a given status date. The value is based on how much the work is worth in terms of hours or costs. Planned Value is the cumulative time-phased budget in terms of hours or costs at a given status date. Actual Costs refers to the cumulative incurred expenses or hours at a given status date.</p>
+            <p>Comparing these parameters gives a Cost Performance Index (CPI) which is defined as Earned Value divided on Actual Costs. Moreover, Schedule Performance Index (SPI) is defined as Earned Value divided on Planned Value. Naturally, the CPI tells whether the project is over, on or under budget, and the SPI tells whether the project is ahead, on or behind its schedule.</p>
+            <p>
+              Based on the parameters, it is also possible to estimate the total costs and duration of the project. Estimated Costs at Completion (EAC) is defined as Planned Value divided on CPI.
+              Furthermore, Expected Duration (ED) is defined as Planned Duration (D) divided on SPI.
+            </p>
+            <p>The project performance may also be visualised by drawing a graph for planned value, earned value and actual costs in a chart. The graphs will illustrate if the project is behind it schedule if the graph for Earned Value is under the graph for Planned Value. Also, one may identify poor cost performance if the graph for Planned Value lies below the graph for Actual Costs. The curves are referred to as the project S-curve.</p>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
