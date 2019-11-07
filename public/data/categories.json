@@ -1008,6 +1008,39 @@
             ],
             "answerIndex": 3,
             "explanation": ""
+          },
+          {
+            "question": "Earned Value refers to:",
+            "options": [
+              "The number of work hours",
+              "The incurred expenses",
+              "The value of the accomplished work",
+              "The project total costs"
+            ],
+            "answerIndex": 2,
+            "explanation": "Earned Value refers to the value of the accomplished work in terms of work hours or costs. See definition on page 147. "
+          },
+          {
+            "question": "Cost Performance Index (CPI) is defined as:",
+            "options": [
+              "Earned Value / Actual Costs",
+              "Actual Costs / Earned Value",
+              "Earned Value / Planned Value",
+              "Actual Costs / Planned Value"
+            ],
+            "answerIndex": 0,
+            "explanation": "CPI = Earned Value / Actual Costs. See page 147."
+          },
+          {
+            "question": "Estimated Project Duration can be defined as:",
+            "options": [
+              "Planned Value / Planned Duration",
+              "Planned Duration / EAC",
+              "Actual Costs / Planned Value",
+              "Planned Duration / SPI"
+            ],
+            "answerIndex": 3,
+            "explanation": "ED = Planned Duration / SPI. See page 148."
           }
         ]
       }
