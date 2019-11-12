@@ -24,9 +24,7 @@
               <li>Organizational complexity</li>
               <li>Projects contribute to transformation</li>
               <li>Projects have impact on business or strategy</li>
-              <li>
-                Projects are executed under one or more types of constraints
-              </li>
+              <li>Projects are executed under one or more types of constraints</li>
               <li>Uncertainty</li>
             </ul>
           </div>
@@ -84,7 +82,7 @@
       </v-expansion-panel>
       <v-expansion-panel>
         <v-expansion-panel-header>
-          <h5>Within limitations</h5>
+          <h5>Restrictions</h5>
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div>
@@ -92,22 +90,6 @@
               Projects have certain limitations that can’t be exceeded for the
               benefits to be fully realized. These can for example be
               limitations for time or resources spent.
-            </p>
-          </div>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-      <v-expansion-panel>
-        <v-expansion-panel-header>
-          <h5>Risk response</h5>
-        </v-expansion-panel-header>
-        <v-expansion-panel-content>
-          <div>
-            <p>
-              Knowing the likelihood and consequences of the risk identified,
-              the risk response planning process involves recognizing the
-              necessary measures to manage the risks. The measures should fit
-              the project characteristics, the risk situation and the risk
-              implications for the project objective.
             </p>
           </div>
         </v-expansion-panel-content>
@@ -134,16 +116,12 @@
         @click="startTermsQuiz"
         type="button"
         class="btn btn-dark btn-lg test-button"
-      >
-        Test terms
-      </button>
+      >Test terms</button>
       <button
         @click="startSummaryQuiz"
         type="button"
         class="btn btn-dark btn-lg test-button"
-      >
-        Test summary
-      </button>
+      >Test summary</button>
     </div>
   </div>
 </template>
