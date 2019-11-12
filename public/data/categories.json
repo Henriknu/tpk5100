@@ -11,7 +11,7 @@
               "What separates one project from another."
             ],
             "answerIndex": 0,
-            "explanation": "See page 27"
+            "explanation": "See p.36-43"
           },
           {
             "question": "What differentiates a project from a regular operational activity?",
@@ -22,7 +22,7 @@
               "There is no difference."
             ],
             "answerIndex": 1,
-            "explanation": "“What separates projects from regular operational activities are the projects’ organizational complexity, projects being tools for change and helping implement and realize business objectives and strategy, the limitations the projects have to be completed within, as well as the uncertainty linked to the project and its completion.” (Page 27-31)"
+            "explanation": "“What separates projects from regular operational activities are the projects’ organizational complexity, projects being tools for change and helping implement and realize business objectives and strategy, the limitations the projects have to be completed within, as well as the uncertainty linked to the project and its completion.” (p.36)"
           },
           {
             "question": "Which of these factors contribute to increased organizational complexity in a project?",
@@ -33,13 +33,13 @@
               "All of the above"
             ],
             "answerIndex": 3,
-            "explanation": "“A project’s organizational complexity increases if several organizational unities and stakeholders are involved, if resources are brought in externally, and if the final product or service is complex in itself.” (Page 27)"
+            "explanation": "“A project’s organizational complexity increases if several organizational unities and stakeholders are involved, if resources are brought in externally, and if the final product or service is complex in itself.” (p.37-38)"
           },
           {
             "question": "Projects only try to improve existing processes.",
             "options": ["True", "False"],
             "answerIndex": 1,
-            "explanation": "“Projects can change existing processes, products and services, but also come up with something completely unique.” (Page 28)"
+            "explanation": "“Projects can change existing processes, products and services, but also come up with something completely unique.” (p.41-43)"
           },
           {
             "question": "A project’s uncertainty depends on the degree of innovation required to complete it.",
@@ -50,13 +50,13 @@
               "False. It is impossible to find a project’s uncertainty in advance."
             ],
             "answerIndex": 0,
-            "explanation": "“A project’s organizational complexity increases if several organizational unities and stakeholders are involved, if resources are brought in externally, and if the final product or service is complex in itself.” (Page 27)"
+            "explanation": "“A project’s organizational complexity increases if several organizational unities and stakeholders are involved, if resources are brought in externally, and if the final product or service is complex in itself.” (p.38-39)"
           },
           {
             "question": "“Projects are used to realize and implement business goals and strategies.”",
             "options": ["True", "False"],
             "answerIndex": 0,
-            "explanation": "“Projects are important tools when it comes to implementing new and realizing existing business objectives and strategies.” (Page 28-29)"
+            "explanation": "“Projects are important tools when it comes to implementing new and realizing existing business objectives and strategies.” (p.46-48)"
           }
         ]
       },
@@ -69,7 +69,7 @@
               "What separates one project from another."
             ],
             "answerIndex": 0,
-            "explanation": "See Page 27"
+            "explanation": "See p.33"
           }
         ]
       }
@@ -87,7 +87,7 @@
               "A stakeholder does not necessarily have influence over the project."
             ],
             "answerIndex": 3,
-            "explanation": "“A stakeholder is an individual or a group of individuals who are affected by or able to influence the project.” (Page 34)"
+            "explanation": "“A stakeholder is an individual or a group of individuals who are affected by or able to influence the project.” (p. 49)"
           },
           {
             "question": "Which of these expectations is most likely to belong to the projects end user?",
@@ -98,7 +98,7 @@
               "Compliance with rules."
             ],
             "answerIndex": 2,
-            "explanation": "“A stakeholder is an individual or a group of individuals who are affected by or able to influence the project.” (Page 34)"
+            "explanation": "“A stakeholder is an individual or a group of individuals who are affected by or able to influence the project.” (p.51)"
           },
           {
             "question": "In a stakeholder mapping the most common is to look at the stakeholders’ influence over and involvement in the project.",
@@ -109,7 +109,7 @@
               "False. The most common is to look at their influence over and interest in the project."
             ],
             "answerIndex": 3,
-            "explanation": "“The most common way to map stakeholders is using their influence over and interest in the project along the axis.” (Page 34)"
+            "explanation": "“The most common way to map stakeholders is using their influence over and interest in the project along the axis.” (p.53)"
           },
           {
             "question": "In a stakeholder mapping, which stakeholder should have the highest priority?",
@@ -120,7 +120,7 @@
               "Stakeholders with low influence and low interest"
             ],
             "answerIndex": 0,
-            "explanation": "“Stakeholders with a high influence over and interest in the project should be considered key stakeholders. They should be closely involved in the process and have their requirements and expectations towards the project closely considered.” (Page 36-37)"
+            "explanation": "“Stakeholders with a high influence over and interest in the project should be considered key stakeholders. They should be closely involved in the process and have their requirements and expectations towards the project closely considered.” (p.53-54)"
           },
           {
             "question": "In a stakeholder mapping, which stakeholder should have the lowest priority?",
@@ -131,13 +131,13 @@
               "Stakeholders with low influence and low interest"
             ],
             "answerIndex": 3,
-            "explanation": "“The stakeholders with a low influence over and interest in the project should have the lowest priority, but as their influence and interest might change over time they must be monitored in order to detect these changes and take actions accordingly.” (Page 38)"
+            "explanation": "“The stakeholders with a low influence over and interest in the project should have the lowest priority, but as their influence and interest might change over time they must be monitored in order to detect these changes and take actions accordingly.” (p.53-54)"
           },
           {
             "question": "Stakeholders with low influence over and interest in the project can be ignored all together.",
             "options": ["True", "False"],
             "answerIndex": 1,
-            "explanation": "“The stakeholders with low influence over and interest in the project should be monitored in case this situation changes.” (Page 38)"
+            "explanation": "“The stakeholders with low influence over and interest in the project should be monitored in case this situation changes.” (p.53-54)"
           }
         ]
       },
@@ -989,24 +989,319 @@
       "summary": {
         "questions": [
           {
-            "question": "Identifying success factors upfront in projects ensures project success.",
+            "question": "What kind of organization structure is logical to use for a consulting firm?",
+            "options": [
+              "Functional Structure",
+              "Weak Matrix",
+              "Project Structure",
+              "Party Structure"
+            ],
+            "answerIndex": 2,
+            "explanation": "Consultants mainly work with projects attained customers"
+          },
+          {
+            "question": "Employees may become less loyal to the parent organization is a downside of functional structure.",
             "options": ["True", "False"],
             "answerIndex": 1,
-            "explanation": "Project success is about the project’s ability to create value. Although it might be wise to identify the success factors, it is not given that this will lead to project success"
+            "explanation": "See Chapter 8"
+          },
+          {
+            "question": "What kind of organization structure is known as “business as usual”?",
+            "options": [
+              "Functional Structure",
+              "Matrix structure",
+              "Project Structure",
+              "Congressional Structure"
+            ],
+            "answerIndex": 0,
+            "explanation": "Functional structure is based on the different departments working on tasks within their function.  See Chapter 8"
+          },
+          {
+            "question": "Risk of Conflicts is highest in",
+            "options": [
+              "Functional Structure",
+              "Matrix structure",
+              "Project Structure",
+              "Congressional Structure"
+            ],
+            "answerIndex": 1,
+            "explanation": "This is because team members may have tasks that do not align and conflicts of interest may appear. See page 125-128."
+          },
+          {
+            "question": "What kind of organization structure is logical to use for a consulting firm?",
+            "options": [
+              "Functional Structure",
+              " Weak Matrix",
+              "Project Structure",
+              " Party Structure"
+            ],
+            "answerIndex": 2,
+            "explanation": "Consultants mainly work with projects attained customers. See p. 122"
+          },
+          {
+            "question": "Decision most likely take longer time in:",
+            "options": [
+              "Functional Structure",
+              "Matrix structure",
+              "Project Structure",
+              "Reverse Structure"
+            ],
+            "answerIndex": 1,
+            "explanation": "Double management results in more overhead."
+          },
+          {
+            "question": "Silo-thinking is biggest threat in:",
+            "options": [
+              "Functional Structure",
+              "Matrix structure",
+              "Project Structure",
+              "Reverse Structure"
+            ],
+            "answerIndex": 1,
+            "explanation": "The departments are separated thus struggle to see the needs of the others. See page 79."
+          },
+          {
+            "question": "In which structure type does the line manager and project manager have equal authority?",
+            "options": [
+              "Balanced Matrix structure",
+              "Functional structure",
+              "Project Structure",
+              "Equal power structure"
+            ],
+            "answerIndex": 0,
+            "explanation": "See chapter 8."
+          },
+          {
+            "question": "What kind of organization structure is used to reduce slack?",
+            "options": [
+              "Functional Structure",
+              "Matrix structure",
+              "Project Structure",
+              "Congressional Structure"
+            ],
+            "answerIndex": 1,
+            "explanation": "Working with tasks within the department and projects at the same time reduces the time where you have nothing to do."
           }
         ]
       },
       "terms": {
         "questions": [
           {
-            "question": "Project success factors can be defined as:",
+            "question": "Failure to understand the impact of the project on the whole organization (see and prioritize only its own needs) is known as :",
             "options": [
-              "Measurable indicators used to assess project outcome",
-              "Ground rules we collect after completing the project",
-              "Measurable indicators used to assess project output",
-              "Ground rules that will govern the project"
+              "Functional thinking",
+              "Streamline thinking",
+              "Silo-thinking",
+              "Technical disruption"
+            ],
+            "answerIndex": 2,
+            "explanation": ""
+          },
+          {
+            "question": "An organization structure where people work in different departments based on professional specialties is known as:",
+            "options": [
+              "Functional structure",
+              "Matrix structure",
+              "Project structure"
+            ],
+            "answerIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "An organizational structure where people are grouped together based on the project they are working on is known as:",
+            "options": [
+              "Functional structure",
+              "Matrix structure",
+              "Project structure"
+            ],
+            "answerIndex": 2,
+            "explanation": ""
+          },
+          {
+            "question": "An organizational structure which is a mixture between functional and project structure where employees work within their department and projects at the same time is known as:",
+            "options": [
+              "Functional structure",
+              "Matrix structure",
+              "Project structure"
+            ],
+            "answerIndex": 1,
+            "explanation": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "Project Planning",
+      "summary": {
+        "questions": [
+          {
+            "question": "A Project may have multiple critical paths.",
+            "options": ["True", "False"],
+            "answerIndex": 0,
+            "explanation": "Critical paths are all paths where you may not increase activity duration without affecting total project duration."
+          },
+          {
+            "question": "WBS is used to estimate project duration",
+            "options": ["True", "False"],
+            "answerIndex": 1,
+            "explanation": "Network analysis is used to estimate project duration  Hint see page 132."
+          },
+          {
+            "question": "Premises for a good project plan are:",
+            "options": [
+              "Flexibility",
+              "Evaluation",
+              "Systematic and structured processes",
+              "All of the above"
             ],
             "answerIndex": 3,
+            "explanation": "See page 129."
+          },
+          {
+            "question": "What is the most common AON-link?",
+            "options": ["FS", "FF", "SF", "SS"],
+            "answerIndex": 0,
+            "explanation": "It is common to look at activities See page 135."
+          },
+          {
+            "question": "When do we use resource loading chart?",
+            "options": [
+              "To compare costs with estimates",
+              "To allocate scarce resources",
+              "To determine project duration",
+              "None of the above"
+            ],
+            "answerIndex": 1,
+            "explanation": "See page 139."
+          },
+          {
+            "question": "Which tool is used to manage scarce resources?",
+            "options": [
+              "WBS",
+              "S-curve",
+              "Resource loading chart",
+              "Network Scheduling"
+            ],
+            "answerIndex": 2,
+            "explanation": "Resource loading chart illustrates the use of resources on a timeline See page 139."
+          },
+          {
+            "question": "Which is not true about WBS?",
+            "options": [
+              "It is used to calculate project duration",
+              "It may be used to justify costs",
+              "It makes the content of the project more clear",
+              "It reduces complexity by breaking it down to manageable tasks"
+            ],
+            "answerIndex": 0,
+            "explanation": "See page 131-133."
+          },
+          {
+            "question": "Critical path is the path with the longest duration",
+            "options": ["True", "False"],
+            "answerIndex": 0,
+            "explanation": "See page 138."
+          },
+          {
+            "question": "S-Curve is a tool to:",
+            "options": [
+              "Calculate project duration",
+              "Compare accrued cost with budgeted costs",
+              "Make the content of the project more clear",
+              "Allocate and plan use of scarce resource"
+            ],
+            "answerIndex": 1,
+            "explanation": "1 is AON-network, 3 is WBS and 4 is resource loading chart. See page 143."
+          },
+          {
+            "question": "How do you calculate Float?",
+            "options": [
+              "Float=LF-EF",
+              "Float=LF-T",
+              "Float=ES+T",
+              "Float=LS-ES",
+              "1 and 4"
+            ],
+            "answerIndex": 4,
+            "explanation": "See page 138."
+          },
+          {
+            "question": "What an activity has a float of 4, what happens if the activity duration is increased by 2?",
+            "options": [
+              "The float is decreased by 2",
+              "Nothing happens",
+              "Project duration increases by 2"
+            ],
+            "answerIndex": 0,
+            "explanation": "The activity still has float, thus is not part of a critical path. Increasing the activity duration reduces the time the activity duration may be increased without changing the total project duration."
+          },
+          {
+            "question": "Which statement is most accurate about WBS?",
+            "options": [
+              "Keep the WBS very detailed level to allow for control",
+              "Encourage creativity",
+              "Use WBS to calculate project duration",
+              "Break up the project into smaller manageable tasks"
+            ],
+            "answerIndex": 3,
+            "explanation": "Work packages in WBs are mini-projects. See page 131-133."
+          },
+          {
+            "question": "Project performance can be accurately determined by evaluating the incurred expenses in relation to the budgeted costs.",
+            "options": ["True", "False"],
+            "answerIndex": 1,
+            "explanation": "ncurred expenses compared to the budgeted costs is not an accurate measure of project performance since it does not take the value of the work accomplished into consideration. See page 146."
+          },
+          {
+            "question": "Estimated project duration is the incurred expenses divided on the planned value.",
+            "options": ["True", "False"],
+            "answerIndex": 1,
+            "explanation": "Incurred expenses cannot be used to estimate the project duration. See page 148."
+          },
+          {
+            "question": "The project S-curve is a graph showing",
+            "options": [
+              "The Cost Performance Index at various times",
+              "Planned Value",
+              "Earned Value",
+              "Option 2 and 3 are correct"
+            ],
+            "answerIndex": 3,
+            "explanation": "The S-curve is a plot of Planned Value, Actual Costs and Earned Value. See page 149."
+          }
+        ]
+      },
+      "terms": {
+        "questions": [
+          {
+            "question": "Flow in an AON-network is:",
+            "options": [
+              "Duration of an activity",
+              "Amount of activities in the critical path",
+              "How much time an activity time may be increased without affecting the project’s end date",
+              "None of the above"
+            ],
+            "answerIndex": 2,
+            "explanation": "See page 93."
+          },
+          {
+            "question": "A critical path is:",
+            "options": [
+              "The path with the shortest project duration",
+              "The path with most activities",
+              "The path with the longest project duration"
+            ],
+            "answerIndex": 2,
+            "explanation": ""
+          },
+          {
+            "question": "Work packages in WBS are:",
+            "options": [
+              "Weekly planned tasks in the project",
+              "The amount of workers hired for the project",
+              "A mini-project with a defined result"
+            ],
+            "answerIndex": 2,
             "explanation": ""
           },
           {
@@ -1041,62 +1336,6 @@
             ],
             "answerIndex": 3,
             "explanation": "ED = Planned Duration / SPI. See page 148."
-          }
-        ]
-      }
-    },
-    {
-      "name": "Project Planning",
-      "summary": {
-        "questions": [
-          {
-            "question": "Identifying success factors upfront in projects ensures project success.",
-            "options": ["True", "False"],
-            "answerIndex": 1,
-            "explanation": "Project success is about the project’s ability to create value. Although it might be wise to identify the success factors, it is not given that this will lead to project success"
-          },
-          {
-            "question": "Project performance can be accurately determined by evaluating the incurred expenses in relation to the budgeted costs.",
-            "options": ["True", "False"],
-            "answerIndex": 1,
-            "explanation": "Incurred expenses compared to the budgeted costs is not an accurate measure of project performance since it does not take the value of the work accomplished into consideration. See page 146."
-          },
-          {
-            "question": "Earned Value refers to",
-            "options": [
-              "The number of work hours",
-              "The incurred expenses",
-              "The value of the accomplished work",
-              "The project total costs"
-            ],
-            "answerIndex": 2,
-            "explanation": "Earned Value refers to the value of the accomplished work in terms of work hours or costs. See definition on page 147."
-          },
-          {
-            "question": "The project S-curve is a graph showing",
-            "options": [
-              "The Cost Performance Index at various times",
-              "Planned Value",
-              "Earned Value",
-              "Option 2 and 3 are correct"
-            ],
-            "answerIndex": 3,
-            "explanation": "The S-curve is a plot of Planned Value, Actual Costs and Earned Value. See page 149."
-          }
-        ]
-      },
-      "terms": {
-        "questions": [
-          {
-            "question": "Project success factors can be defined as:",
-            "options": [
-              "Measurable indicators used to assess project outcome",
-              "Ground rules we collect after completing the project",
-              "Measurable indicators used to assess project output",
-              "Ground rules that will govern the project"
-            ],
-            "answerIndex": 3,
-            "explanation": ""
           }
         ]
       }
